@@ -25,14 +25,14 @@ Additionally, we explore privacy-preserving techniques and threat models in the 
 ### 2. Federated Learning Using [Flower](https://flower.dev) framework
 
 ### 3. Dealing with IID and Non-IID
-  i. IID vs Non-IID using FedAvg vs SCAFFOLD vs FedPer vs Data Sharing
-  ii. IID vs Non-IID using FedPer
-  iii. IID vs Non-IID using SCAFFOLD
-  iv. IID vs Non-IID using Data Sharing
+  - IID vs Non-IID using FedAvg vs SCAFFOLD vs FedPer vs Data Sharing 
+  - IID vs Non-IID using FedPer 
+  - IID vs Non-IID using SCAFFOLD 
+  - IID vs Non-IID using Data Sharing 
 
 ### 4. Privacy and Security in FL
-  i. Differential privacy defense experiments
-  ii. Gradient Inversion
+  - Differential privacy defense experiments
+  - Gradient Inversion
 
 ### 5. Project?
 
