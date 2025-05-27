@@ -1,0 +1,14 @@
+[] Own Implementation of FedAvg vs Centralised
+[] Federated Learning Using Flower framework
+
+[] Dealing with IID and Non-IID
+    [] IID vs Non-IID using FedAvg vs SCAFFOLD vs FedPer vs Data Sharing
+    [] IID vs Non-IID using FedPer
+    [] IID vs Non-IID using SCAFFOLD
+    [] IID vs Non-IID using Data Sharing
+
+[] Privacy and Security in FL
+    [] Differential privacy defense experiments
+    [] Gradient Inversion
+
+[] Project?
