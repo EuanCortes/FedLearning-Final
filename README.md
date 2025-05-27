@@ -20,35 +20,27 @@ Additionally, we explore privacy-preserving techniques and threat models in the 
 
 ## Experiments
 
-### 1. Centralized vs Federated Training on CIFAR-10
-- Compare FedAvg with a global model trained on the full dataset
-- Evaluate convergence and accuracy under IID partitioning
-- Modular and scalable simulation using the [Flower](https://flower.dev) framework
+### 1. Own Implementation of FedAvg vs Centralised
 
-### 2. FedAvg under Non-IID Conditions
-- Simulated non-IID splits (1-class and 2-class per client)
-- Comparison of FedAvg, FedPer, and SCAFFOLD
-- Evaluation of personalization and convergence behavior
+### 2. Federated Learning Using [Flower](https://flower.dev) framework
 
-### 3. Privacy and Security in FL
-- Implementation of membership inference attacks
-- Deep Leakage from Gradients (DLG/iDLG)
-- Differential privacy defense experiments
+### 3. Dealing with IID and Non-IID
+  i. IID vs Non-IID using FedAvg vs SCAFFOLD vs FedPer vs Data Sharing
+  ii. IID vs Non-IID using FedPer
+  iii. IID vs Non-IID using SCAFFOLD
+  iv. IID vs Non-IID using Data Sharing
 
-### 4. THINGS-EEG Project
-- Application of federated learning to decentralized EEG data
+### 4. Privacy and Security in FL
+  i. Differential privacy defense experiments
+  ii. Gradient Inversion
+
+### 5. Project?
 
 ---
 
 ## Report
 
 The full LaTeX report with figures and references is located in the `report/` directory.
-
-Topics include:
-- FedAvg implementation and theory
-- Experimental results (IID and non-IID)
-- Differential privacy and attack resilience
-- Application to EEG data
 
 ---
 
