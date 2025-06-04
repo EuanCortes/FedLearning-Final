@@ -17,6 +17,25 @@ Additionally, we explore privacy-preserving techniques and threat models in the 
 ├── report/              - LaTeX source of the written report  
 ├── data/                - Dataset Loaders partitioning and preprocessing  
 
+## Virtual Environment
+
+Create a new conda environment. Open the anaconda prompt and write the following command
+```
+conda create --name FLenv python=3.11.12 numpy scipy jupyter
+```
+Once it has finished installing the packages activate the environment with
+```
+conda activate FLenv
+```
+Next, go to the [pytorch website](https://pytorch.org/get-started/locally/), select the appropriate system specifications and select the pip package manager. Copy the given command and go back to the anaconda prompt and run the command. An example is given below:
+```
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+
+```
+Now we are ready to install the flower framework: we need the simulation package as well as the vision dataset:
+```
+pip install "flwr[simulation]" "flwr-datasets[vision]"
+```
 
 ## Experiments
 
