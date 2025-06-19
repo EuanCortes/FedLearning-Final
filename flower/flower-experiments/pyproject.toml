@@ -24,28 +24,49 @@ publisher = "philip"
 serverapp = "flower_experiments.server_app:app"
 clientapp = "flower_experiments.client_app:app"
 
+
+## Parameters for the federated learning simulation ##
+
 [tool.flwr.app.config]
-num-server-rounds = 2
-fraction-fit = 1
-fraction-evaluate = 0.5
-num-partitions = 10
-local-epochs = 5
-learning-rate = 0.01
-momentum = 0.0
-weight-decay = 0.0
-batch-size = 64
+num-server-rounds = 2           # number of rounds of federated learning
+fraction-fit = 1                # fraction of clients to sample each round for training
+fraction-evaluate = 0.5         # fraction of clients to sample each round for evaluation
+num-partitions = 10             # number of clients (has to be same as num-supernodes in tool.flwr.federations.local-simulation.options!)
+local-epochs = 5                # number of local training epochs
+learning-rate = 0.01            # learning rate for local optimizer
+momentum = 0.0                  # momentum for local optimizer
+weight-decay = 0.0              # weight decay for local optimizer
+batch-size = 64                 # batch size for local training
 
-method = "fedavg"
-partition-method = "iid"
-num-shards-per-partition = 2
-dirichlet-alpha = 0.5
+method = "fedavg"               # aggregation method: either "fedavg" or "scaffold"
+partition-method = "iid"        # partitioning method: either "iid", "shard" or "dirichlet"
+num-shards-per-partition = 2    # shards per partition, only applicable with "shard" method
+dirichlet-alpha = 0.5           # alpha parameter for dirichlet distribution, only applicable with "dirichlet" method
 
-cache-dir = "data"
+# directory where data is downloaded to and stored
+cache-dir = "/zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/data"
+
+#cuda device id:
+device_id = 0
+
 
 [tool.flwr.federations]
 default = "local-simulation"
 
-[tool.flwr.federations.local-simulation]
-options.num-supernodes = 10
-options.backend.client-resources.num-cpus = 2
-options.backend.client-resources.num-gpus = 0.2
+
+[tool.flwr.federations.local-simulation.options]
+num-supernodes = 10
+
+
+[tool.flwr.federations.local-simulation.options.backend.init-args]
+address = "local"
+num-cpus = 16
+num-gpus = 1
+### -temp-dir = "/tmp/ray"
+
+
+[tool.flwr.federations.local-simulation.options.backend.client-resources]
+num-cpus = 2
+num-gpus = 0.1
+
+

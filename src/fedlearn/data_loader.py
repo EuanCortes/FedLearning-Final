@@ -7,6 +7,7 @@ from flwr_datasets import FederatedDataset
 
 fds = None  # Global variable to hold the FederatedDataset instance
 partitioner = None  # Global variable to hold the partitioner instance
+p_method = None
 
 def load_datasets(partition_id: int, 
                   partition_method: str,
@@ -26,8 +27,8 @@ def load_datasets(partition_id: int,
         Tuple[DataLoader, DataLoader, DataLoader]: trainloader, valloader, and testloader.
     """
     # Only initialize `FederatedDataset` and partitioner once
-    global fds, partitioner
-    if partitioner is None:
+    global fds, partitioner, p_method
+    if partitioner is None or p_method != partition_method:
         partitioner_constructor = None
         if partition_method == "iid":
             partitioner_constructor = IidPartitioner
@@ -40,12 +41,13 @@ def load_datasets(partition_id: int,
             raise ValueError(f"Unknown partitioner method: {partition_method}")
         
         partitioner = partitioner_constructor(**partitioner_kwargs)
+        p_method = partition_method
 
-    if fds is None:
         fds = FederatedDataset(dataset="cifar10", 
                                partitioners={"train": partitioner}, 
                                cache_dir=cache_dir,
                                )
+
 
     partition = fds.load_partition(partition_id)
     # Divide data on each node: 80% train, 20% test

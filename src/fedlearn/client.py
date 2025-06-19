@@ -23,6 +23,7 @@ class FlowerClient(NumPyClient):
                  lr: float,
                  momentum: float,
                  weight_decay: float,
+                 device: Optional[int]
                  ):
         self.partition_id = partition_id
         self.net = net
@@ -33,7 +34,10 @@ class FlowerClient(NumPyClient):
         self.lr = lr
         self.momentum = momentum
         self.weight_decay = weight_decay
-        self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        if device is not None:
+            self.device = torch.device(f"cuda:{device}" if torch.cuda.is_available() else "cpu")
+        else:
+            self.device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
         self.net.to(self.device)
 
 
@@ -78,14 +82,18 @@ class ScaffoldClient(NumPyClient):
                  lr: float,
                  momentum: float,
                  weight_decay: float,
-                 save_dir: Optional[str] = None,
+                 save_dir: Optional[str],
+                 device: Optional[int]
                  ):
         self.partition_id = partition_id
         self.net = net
         self.trainloader = trainloader
         self.valloader = valloader
         self.criterion = criterion
-        self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        if device is not None:
+            self.device = torch.device(f"cuda:{device}" if torch.cuda.is_available() else "cpu")
+        else:
+            self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         self.net.to(self.device)
         self.num_epochs = num_epochs
         self.lr = lr

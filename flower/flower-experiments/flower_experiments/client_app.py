@@ -51,9 +51,10 @@ def client_fn(context: Context) -> Client:
 
     num_epochs = context.run_config["local-epochs"]
     lr = context.run_config["learning-rate"]
-    momentum = context.run_config.get("momentum", 0.0)
-    weight_decay = context.run_config.get("weight-decay", 0.0)
-    method = context.run_config.get("method", "fedavg")
+    momentum = context.run_config["momentum"]
+    weight_decay = context.run_config["weight-decay"]
+    method = context.run_config["method"]
+    device = context.run_config["device_id"]
     
     if method.lower() == "fedavg":
         return FlowerClient(
@@ -66,6 +67,7 @@ def client_fn(context: Context) -> Client:
             lr=lr,
             momentum=momentum,
             weight_decay=weight_decay,
+            device=device
         ).to_client()
     
     elif method.lower() == "scaffold":
@@ -79,7 +81,8 @@ def client_fn(context: Context) -> Client:
             lr=lr,
             momentum=momentum,
             weight_decay=weight_decay,
-            save_dir="client_cvs"
+            save_dir="client_cvs",
+            device=device
         ).to_client()
 
 
