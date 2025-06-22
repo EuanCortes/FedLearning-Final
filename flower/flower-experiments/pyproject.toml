@@ -28,7 +28,7 @@ clientapp = "flower_experiments.client_app:app"
 ## Parameters for the federated learning simulation ##
 
 [tool.flwr.app.config]
-num-server-rounds = 2           # number of rounds of federated learning
+num-server-rounds = 50          # number of rounds of federated learning
 fraction-fit = 1                # fraction of clients to sample each round for training
 fraction-evaluate = 0.5         # fraction of clients to sample each round for evaluation
 num-partitions = 10             # number of clients (has to be same as num-supernodes in tool.flwr.federations.local-simulation.options!)
@@ -45,9 +45,7 @@ dirichlet-alpha = 0.5           # alpha parameter for dirichlet distribution, on
 
 # directory where data is downloaded to and stored
 cache-dir = "/zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/data"
-
-#cuda device id:
-device_id = 0
+save-dir = "client_cvs"
 
 
 [tool.flwr.federations]

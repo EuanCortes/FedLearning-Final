@@ -1,0 +1,133 @@
+Loading project configuration... 
+Success
+Server-side evaluation loss 2.302843834943832 / accuracy 0.1002
+Server-side evaluation loss 2.0527503414518513 / accuracy 0.2416
+Server-side evaluation loss 1.4477032726737344 / accuracy 0.4891
+Server-side evaluation loss 1.1990678496421523 / accuracy 0.5713
+Server-side evaluation loss 1.0556345301069272 / accuracy 0.6234
+Server-side evaluation loss 0.967046107456183 / accuracy 0.6582
+Server-side evaluation loss 0.8908409483873161 / accuracy 0.6864
+Server-side evaluation loss 0.8490195688168714 / accuracy 0.7045
+Server-side evaluation loss 0.8507160567174292 / accuracy 0.7022
+Server-side evaluation loss 0.8316877359037946 / accuracy 0.7098
+Server-side evaluation loss 0.8085840353920202 / accuracy 0.7193
+Server-side evaluation loss 0.8076469034525999 / accuracy 0.7247
+Server-side evaluation loss 0.818324560762211 / accuracy 0.7222
+Server-side evaluation loss 0.8282870092209736 / accuracy 0.727
+Server-side evaluation loss 0.8319830476858054 / accuracy 0.7282
+Server-side evaluation loss 0.8445354284374578 / accuracy 0.7228
+Server-side evaluation loss 0.8665249575475219 / accuracy 0.7255
+Server-side evaluation loss 0.8979740693311024 / accuracy 0.7253
+Server-side evaluation loss 0.8946553472500698 / accuracy 0.7177
+Server-side evaluation loss 0.9093116618645419 / accuracy 0.7229
+Server-side evaluation loss 0.9150912837617716 / accuracy 0.7238
+Server-side evaluation loss 0.9738579751199977 / accuracy 0.6971
+Server-side evaluation loss 0.9998678196767333 / accuracy 0.701
+Server-side evaluation loss 1.0381669783668153 / accuracy 0.7172
+Server-side evaluation loss 1.051430329585531 / accuracy 0.7173
+Server-side evaluation loss 1.0145273859713488 / accuracy 0.7181
+Server-side evaluation loss 1.091204976959593 / accuracy 0.7169
+Server-side evaluation loss 1.0602607138597282 / accuracy 0.7211
+Server-side evaluation loss 1.0936571553254584 / accuracy 0.7111
+Server-side evaluation loss 1.0912805584965237 / accuracy 0.6997
+Server-side evaluation loss 1.1000679577611814 / accuracy 0.7077
+Server-side evaluation loss 1.153328026366082 / accuracy 0.7102
+Server-side evaluation loss 1.189100664512367 / accuracy 0.7089
+Server-side evaluation loss 1.1547958241526488 / accuracy 0.7011
+Server-side evaluation loss 1.22546918301066 / accuracy 0.7073
+Server-side evaluation loss 1.2053702014267065 / accuracy 0.7054
+Command '['flower-simulation', '--app', '.', '--num-supernodes', '10', '--backend-config', '{"init-args": {"address": "local", "num-cpus": 16, "num-gpus": 1}, "client-resources": {"num-cpus": 2, "num-gpus": 0.1}}', '--run-config', "\nnum-partitions=10 num-server-rounds=50 method='scaffold' partition-method='dirichlet' fraction-fit=1 momentum=0.9 \n"]' returned non-zero exit status 1.
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@hpc.dtu.dk>
+Subject: Job 25307051: <test_flower> in cluster <dcc> Done
+
+Job <test_flower> was submitted from host <n-62-20-9> by user <s204790> in cluster <dcc> at Sun Jun 22 18:41:07 2025
+Job was executed on host(s) <16*n-62-18-9>, in queue <gpua100>, as user <s204790> in cluster <dcc> at Sun Jun 22 18:41:09 2025
+</zhome/94/5/156250> was used as the home directory.
+</zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/flower/flower-experiments> was used as the working directory.
+Started at Sun Jun 22 18:41:09 2025
+Terminated at Sun Jun 22 18:54:10 2025
+Results reported at Sun Jun 22 18:54:10 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+
+
+########################### General options ###########################
+
+### –- specify queue --
+#BSUB -q gpua100
+
+### -- set the job Name --
+#BSUB -J test_flower
+
+### -- ask for number of cores (default: 1) --
+#BSUB -n 16
+
+### -- Select the resources: 1 gpu in exclusive process mode --
+#BSUB -gpu "num=1:mode=shared"
+
+### -- set walltime limit: hh:mm --  maximum 24 hours for GPU-queues right now
+#BSUB -W 00:30
+
+# request system-memory
+#BSUB -R "rusage[mem=32GB]"
+#BSUB -R "span[hosts=1]"
+
+### -- Specify the output and error file. %J is the job-id --
+### -- -o and -e mean append, -oo and -eo mean overwrite --
+#BSUB -o /zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/logs/lsf/%J.out
+#BSUB -e /zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/logs/lsf/%J.err
+# -- end of LSF options --
+
+source /zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/.venv/bin/activate
+
+federation_config="
+options.num-supernodes=10 \
+options.backend.init-args.address='local' \
+options.backend.init-args.num-cpus=${LSB_DJOB_NUMPROC} \
+options.backend.init-args.num-gpus=1 \
+options.backend.client-resources.num-cpus=2 \
+options.backend.client-resources.num-gpus=0.1
+"
+
+run_config="
+num-partitions=10 \
+num-server-rounds=50 \
+method='scaffold' \
+partition-method='dirichlet' \
+fraction-fit=1 \
+momentum=0.9 
+"
+
+
+(... more ...)
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   4481.00 sec.
+    Max Memory :                                 8587 MB
+    Average Memory :                             7324.57 MB
+    Total Requested Memory :                     524288.00 MB
+    Delta Memory :                               515701.00 MB
+    Max Swap :                                   -
+    Max Processes :                              20
+    Max Threads :                                859
+    Run time :                                   881 sec.
+    Turnaround time :                            783 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file </zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/logs/lsf/25307051.err> for stderr output of this job.
+

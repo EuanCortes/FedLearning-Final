@@ -4,19 +4,19 @@
 ########################### General options ###########################
 
 ### –- specify queue --
-#BSUB -q gpuv100
+#BSUB -q gpua100
 
 ### -- set the job Name --
 #BSUB -J test_flower
 
 ### -- ask for number of cores (default: 1) --
-#BSUB -n 8
+#BSUB -n 16
 
 ### -- Select the resources: 1 gpu in exclusive process mode --
-#BSUB -gpu "num=1:mode=exclusive_process"
+#BSUB -gpu "num=1:mode=shared"
 
 ### -- set walltime limit: hh:mm --  maximum 24 hours for GPU-queues right now
-#BSUB -W 00:05
+#BSUB -W 00:30
 
 # request system-memory
 #BSUB -R "rusage[mem=32GB]"
@@ -30,26 +30,27 @@
 
 source /zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/.venv/bin/activate
 
-echo "Running Flower job on $(hostname)"
+federation_config="
+options.num-supernodes=10 \
+options.backend.init-args.address='local' \
+options.backend.init-args.num-cpus=${LSB_DJOB_NUMPROC} \
+options.backend.init-args.num-gpus=1 \
+options.backend.client-resources.num-cpus=2 \
+options.backend.client-resources.num-gpus=0.1
+"
 
-#export CUDA_VISIBLE_DEVICES=0,1
-
-export CUDA_LAUNCH_BLOCKING=1
-
-export TORCH_USE_CUDA_DSA=1
-
-echo "CUDA_VISIBLE_DEVICES: $CUDA_VISIBLE_DEVICES"
-
-#DEVICE_ID=$(echo $CUDA_VISIBLE_DEVICES | cut -d',' -f1)
-
-nvidia-smi
+run_config="
+num-partitions=10 \
+num-server-rounds=50 \
+method='scaffold' \
+partition-method='dirichlet' \
+fraction-fit=1 \
+momentum=0.9 
+"
 
 flwr run    \
-    --federation-config "options.num-supernodes=10" \
-    --federation-config "options.backend.init-args.address='local'" \
-    --federation-config "options.backend.init-args.num-cpus=${LSB_DJOB_NUMPROC}" \
-    --federation-config "options.backend.init-args.num-gpus=1" \
-    --federation-config "options.backend.client-resources.num-cpus=2" \
-    --federation-config "options.backend.client-resources.num-gpus=0.2" \
-    --run-config "num-server-rounds=2"
+    --federation-config "$federation_config" \
+    --run-config "$run_config" 
+
+python3 clean_cvs.py /zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/flower/flower-experiments/client_cvs
 

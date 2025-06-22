@@ -1,0 +1,517 @@
+[92mINFO [0m:      Starting Flower ServerApp, config: num_rounds=50, no round_timeout
+[92mINFO [0m:      
+[92mINFO [0m:      [INIT]
+[92mINFO [0m:      Using initial global parameters provided by strategy
+[92mINFO [0m:      Starting evaluation of initial global parameters
+[92mINFO [0m:      initial parameters (loss, other metrics): 2.3028027434257945, {'accuracy': 0.1012}
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 1]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[93mWARNING [0m:   No fit_metrics_aggregation_fn provided
+[92mINFO [0m:      fit progress: (1, 2.2447450145794328, {'accuracy': 0.1483}, 24.077307850006036)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[93mWARNING [0m:   No evaluate_metrics_aggregation_fn provided
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 2]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      fit progress: (2, 2.0564415394120914, {'accuracy': 0.217}, 35.523834002029616)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 3]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      fit progress: (3, 1.9332957761302876, {'accuracy': 0.2872}, 46.460681419004686)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 4]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      fit progress: (4, 1.8016177719565714, {'accuracy': 0.3447}, 57.303147843980696)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 5]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      fit progress: (5, 1.7058554136069717, {'accuracy': 0.3875}, 68.04222583997762)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 6]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      fit progress: (6, 1.6292080848839632, {'accuracy': 0.4053}, 78.87720783101395)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 7]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      fit progress: (7, 1.5679643845102589, {'accuracy': 0.4317}, 89.80898125900421)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 8]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      fit progress: (8, 1.5343309876265798, {'accuracy': 0.4361}, 101.07736424601171)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 9]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      fit progress: (9, 1.4677194820088186, {'accuracy': 0.4646}, 112.14750079100486)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 10]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      fit progress: (10, 1.437513972543607, {'accuracy': 0.4748}, 123.0708124099765)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 11]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      fit progress: (11, 1.4161050851178016, {'accuracy': 0.4848}, 133.89366678497754)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 12]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      fit progress: (12, 1.3906411388117796, {'accuracy': 0.4924}, 144.85158855601912)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 13]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      fit progress: (13, 1.3514059835178838, {'accuracy': 0.5104}, 155.69803171302192)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 14]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      fit progress: (14, 1.3820519409361918, {'accuracy': 0.5054}, 166.55146890500328)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 15]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      fit progress: (15, 1.3369155066787817, {'accuracy': 0.5123}, 177.48875421402045)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 16]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      fit progress: (16, 1.2897654521237514, {'accuracy': 0.5298}, 188.43241312302416)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 17]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      fit progress: (17, 1.272657660162373, {'accuracy': 0.5388}, 199.1615244409768)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 18]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      fit progress: (18, 1.237093010146147, {'accuracy': 0.5524}, 210.18503310502274)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 19]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      fit progress: (19, 1.2234769467335598, {'accuracy': 0.5604}, 221.50839624000946)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 20]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      fit progress: (20, 1.1994686889800297, {'accuracy': 0.568}, 232.33223021798767)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 21]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      fit progress: (21, 1.2113196937141903, {'accuracy': 0.5608}, 243.41411155700916)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 22]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      fit progress: (22, 1.1865576847343688, {'accuracy': 0.5677}, 254.30150934000267)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 23]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      fit progress: (23, 1.1523740796526527, {'accuracy': 0.5893}, 265.08284829801414)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 24]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      fit progress: (24, 1.133634496266675, {'accuracy': 0.5915}, 275.9522765239817)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 25]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      fit progress: (25, 1.1113040299172614, {'accuracy': 0.6019}, 286.94958673103247)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 26]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      fit progress: (26, 1.1321781877499477, {'accuracy': 0.595}, 297.7720547239878)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 27]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      fit progress: (27, 1.093060913738931, {'accuracy': 0.6158}, 308.76126205699984)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 28]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      fit progress: (28, 1.0823170751523061, {'accuracy': 0.614}, 319.73439984797733)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 29]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      fit progress: (29, 1.072201585693724, {'accuracy': 0.6219}, 330.6658222430269)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 30]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      fit progress: (30, 1.0634370806870188, {'accuracy': 0.6259}, 341.39595961302985)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 31]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      fit progress: (31, 1.0559041420365596, {'accuracy': 0.6212}, 352.44699130702065)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 32]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      fit progress: (32, 1.0488275919750238, {'accuracy': 0.6253}, 363.4835911190021)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 33]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      fit progress: (33, 1.0262400409218613, {'accuracy': 0.6374}, 374.4177893199958)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 34]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      fit progress: (34, 0.9860432292245755, {'accuracy': 0.6505}, 385.56938156299293)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 35]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      fit progress: (35, 1.0192649049364078, {'accuracy': 0.64}, 396.4155901229824)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 36]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      fit progress: (36, 1.008019276864969, {'accuracy': 0.643}, 407.4677416299819)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 37]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      fit progress: (37, 0.9947698028983584, {'accuracy': 0.6476}, 418.3017722360091)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 38]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      fit progress: (38, 0.9636404187815963, {'accuracy': 0.6649}, 429.45554418099346)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 39]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      fit progress: (39, 0.9667823580419941, {'accuracy': 0.6653}, 440.47873645700747)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 40]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      fit progress: (40, 1.0057620178362368, {'accuracy': 0.6531}, 451.2079545480083)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 41]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      fit progress: (41, 1.01544732804511, {'accuracy': 0.6489}, 462.13460629899055)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 42]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      fit progress: (42, 0.9932081069156622, {'accuracy': 0.6633}, 472.8440889060148)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 43]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      fit progress: (43, 0.9312412355356156, {'accuracy': 0.68}, 483.8815199310193)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 44]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      fit progress: (44, 0.9264059121821336, {'accuracy': 0.6854}, 494.84735060198)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 45]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      fit progress: (45, 0.955760350652561, {'accuracy': 0.6717}, 505.8823945100303)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 46]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      fit progress: (46, 0.9800189401313757, {'accuracy': 0.6675}, 516.8939265470253)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 47]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      fit progress: (47, 0.9554920371171016, {'accuracy': 0.6778}, 527.9122186650056)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 48]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      fit progress: (48, 0.945497510729322, {'accuracy': 0.6834}, 538.7476044209907)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 49]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      fit progress: (49, 0.9589190475500313, {'accuracy': 0.6783}, 549.5806150499848)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 50]
+[92mINFO [0m:      configure_fit: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 10 results and 0 failures
+[92mINFO [0m:      fit progress: (50, 0.9455206701709966, {'accuracy': 0.6849}, 560.8526952919783)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [SUMMARY]
+[92mINFO [0m:      Run finished 50 round(s) in 561.36s
+[92mINFO [0m:      	History (loss, distributed):
+[92mINFO [0m:      		round 1: 2.2451362001134996
+[92mINFO [0m:      		round 2: 2.0437830785910287
+[92mINFO [0m:      		round 3: 1.9357752875277872
+[92mINFO [0m:      		round 4: 1.9224310629069805
+[92mINFO [0m:      		round 5: 1.7275614504961623
+[92mINFO [0m:      		round 6: 1.6443968369410589
+[92mINFO [0m:      		round 7: 1.5740898861771537
+[92mINFO [0m:      		round 8: 1.5352788709104062
+[92mINFO [0m:      		round 9: 1.4353399405996483
+[92mINFO [0m:      		round 10: 1.3641551568888235
+[92mINFO [0m:      		round 11: 1.4020756373279972
+[92mINFO [0m:      		round 12: 1.3530455075559162
+[92mINFO [0m:      		round 13: 1.3827333017571333
+[92mINFO [0m:      		round 14: 1.3603235761324564
+[92mINFO [0m:      		round 15: 1.4343516446731903
+[92mINFO [0m:      		round 16: 1.3079815282337908
+[92mINFO [0m:      		round 17: 1.3118010932120725
+[92mINFO [0m:      		round 18: 1.2635828869058452
+[92mINFO [0m:      		round 19: 1.3682507821491787
+[92mINFO [0m:      		round 20: 1.2440428595020347
+[92mINFO [0m:      		round 21: 1.2279348388314246
+[92mINFO [0m:      		round 22: 1.2515755094838945
+[92mINFO [0m:      		round 23: 1.1347905748030718
+[92mINFO [0m:      		round 24: 1.1711808869784528
+[92mINFO [0m:      		round 25: 1.0980529475212097
+[92mINFO [0m:      		round 26: 1.1825396857042423
+[92mINFO [0m:      		round 27: 1.1089180341133704
+[92mINFO [0m:      		round 28: 1.0676875899235407
+[92mINFO [0m:      		round 29: 1.0468615121566331
+[92mINFO [0m:      		round 30: 1.0745088810983456
+[92mINFO [0m:      		round 31: 1.08283441196913
+[92mINFO [0m:      		round 32: 1.0206726625561715
+[92mINFO [0m:      		round 33: 1.0630902757589844
+[92mINFO [0m:      		round 34: 1.0210830322627364
+[92mINFO [0m:      		round 35: 1.0462930274296955
+[92mINFO [0m:      		round 36: 1.0078622161364945
+[92mINFO [0m:      		round 37: 0.9316281656856122
+[92mINFO [0m:      		round 38: 1.0037005543708801
+[92mINFO [0m:      		round 39: 0.9515558792197186
+[92mINFO [0m:      		round 40: 0.8559780778822961
+[92mINFO [0m:      		round 41: 1.049741551947238
+[92mINFO [0m:      		round 42: 0.9509418464842296
+[92mINFO [0m:      		round 43: 0.9123280886057261
+[92mINFO [0m:      		round 44: 0.9257671564169552
+[92mINFO [0m:      		round 45: 1.0084738462835878
+[92mINFO [0m:      		round 46: 0.9685780594223424
+[92mINFO [0m:      		round 47: 0.896955345298203
+[92mINFO [0m:      		round 48: 0.9377289251202628
+[92mINFO [0m:      		round 49: 0.8374558966836811
+[92mINFO [0m:      		round 50: 0.8623068799143252
+[92mINFO [0m:      	History (loss, centralized):
+[92mINFO [0m:      		round 0: 2.3028027434257945
+[92mINFO [0m:      		round 1: 2.2447450145794328
+[92mINFO [0m:      		round 2: 2.0564415394120914
+[92mINFO [0m:      		round 3: 1.9332957761302876
+[92mINFO [0m:      		round 4: 1.8016177719565714
+[92mINFO [0m:      		round 5: 1.7058554136069717
+[92mINFO [0m:      		round 6: 1.6292080848839632
+[92mINFO [0m:      		round 7: 1.5679643845102589
+[92mINFO [0m:      		round 8: 1.5343309876265798
+[92mINFO [0m:      		round 9: 1.4677194820088186
+[92mINFO [0m:      		round 10: 1.437513972543607
+[92mINFO [0m:      		round 11: 1.4161050851178016
+[92mINFO [0m:      		round 12: 1.3906411388117796
+[92mINFO [0m:      		round 13: 1.3514059835178838
+[92mINFO [0m:      		round 14: 1.3820519409361918
+[92mINFO [0m:      		round 15: 1.3369155066787817
+[92mINFO [0m:      		round 16: 1.2897654521237514
+[92mINFO [0m:      		round 17: 1.272657660162373
+[92mINFO [0m:      		round 18: 1.237093010146147
+[92mINFO [0m:      		round 19: 1.2234769467335598
+[92mINFO [0m:      		round 20: 1.1994686889800297
+[92mINFO [0m:      		round 21: 1.2113196937141903
+[92mINFO [0m:      		round 22: 1.1865576847343688
+[92mINFO [0m:      		round 23: 1.1523740796526527
+[92mINFO [0m:      		round 24: 1.133634496266675
+[92mINFO [0m:      		round 25: 1.1113040299172614
+[92mINFO [0m:      		round 26: 1.1321781877499477
+[92mINFO [0m:      		round 27: 1.093060913738931
+[92mINFO [0m:      		round 28: 1.0823170751523061
+[92mINFO [0m:      		round 29: 1.072201585693724
+[92mINFO [0m:      		round 30: 1.0634370806870188
+[92mINFO [0m:      		round 31: 1.0559041420365596
+[92mINFO [0m:      		round 32: 1.0488275919750238
+[92mINFO [0m:      		round 33: 1.0262400409218613
+[92mINFO [0m:      		round 34: 0.9860432292245755
+[92mINFO [0m:      		round 35: 1.0192649049364078
+[92mINFO [0m:      		round 36: 1.008019276864969
+[92mINFO [0m:      		round 37: 0.9947698028983584
+[92mINFO [0m:      		round 38: 0.9636404187815963
+[92mINFO [0m:      		round 39: 0.9667823580419941
+[92mINFO [0m:      		round 40: 1.0057620178362368
+[92mINFO [0m:      		round 41: 1.01544732804511
+[92mINFO [0m:      		round 42: 0.9932081069156622
+[92mINFO [0m:      		round 43: 0.9312412355356156
+[92mINFO [0m:      		round 44: 0.9264059121821336
+[92mINFO [0m:      		round 45: 0.955760350652561
+[92mINFO [0m:      		round 46: 0.9800189401313757
+[92mINFO [0m:      		round 47: 0.9554920371171016
+[92mINFO [0m:      		round 48: 0.945497510729322
+[92mINFO [0m:      		round 49: 0.9589190475500313
+[92mINFO [0m:      		round 50: 0.9455206701709966
+[92mINFO [0m:      	History (metrics, centralized):
+[92mINFO [0m:      	{'accuracy': [(0, 0.1012),
+[92mINFO [0m:      	              (1, 0.1483),
+[92mINFO [0m:      	              (2, 0.217),
+[92mINFO [0m:      	              (3, 0.2872),
+[92mINFO [0m:      	              (4, 0.3447),
+[92mINFO [0m:      	              (5, 0.3875),
+[92mINFO [0m:      	              (6, 0.4053),
+[92mINFO [0m:      	              (7, 0.4317),
+[92mINFO [0m:      	              (8, 0.4361),
+[92mINFO [0m:      	              (9, 0.4646),
+[92mINFO [0m:      	              (10, 0.4748),
+[92mINFO [0m:      	              (11, 0.4848),
+[92mINFO [0m:      	              (12, 0.4924),
+[92mINFO [0m:      	              (13, 0.5104),
+[92mINFO [0m:      	              (14, 0.5054),
+[92mINFO [0m:      	              (15, 0.5123),
+[92mINFO [0m:      	              (16, 0.5298),
+[92mINFO [0m:      	              (17, 0.5388),
+[92mINFO [0m:      	              (18, 0.5524),
+[92mINFO [0m:      	              (19, 0.5604),
+[92mINFO [0m:      	              (20, 0.568),
+[92mINFO [0m:      	              (21, 0.5608),
+[92mINFO [0m:      	              (22, 0.5677),
+[92mINFO [0m:      	              (23, 0.5893),
+[92mINFO [0m:      	              (24, 0.5915),
+[92mINFO [0m:      	              (25, 0.6019),
+[92mINFO [0m:      	              (26, 0.595),
+[92mINFO [0m:      	              (27, 0.6158),
+[92mINFO [0m:      	              (28, 0.614),
+[92mINFO [0m:      	              (29, 0.6219),
+[92mINFO [0m:      	              (30, 0.6259),
+[92mINFO [0m:      	              (31, 0.6212),
+[92mINFO [0m:      	              (32, 0.6253),
+[92mINFO [0m:      	              (33, 0.6374),
+[92mINFO [0m:      	              (34, 0.6505),
+[92mINFO [0m:      	              (35, 0.64),
+[92mINFO [0m:      	              (36, 0.643),
+[92mINFO [0m:      	              (37, 0.6476),
+[92mINFO [0m:      	              (38, 0.6649),
+[92mINFO [0m:      	              (39, 0.6653),
+[92mINFO [0m:      	              (40, 0.6531),
+[92mINFO [0m:      	              (41, 0.6489),
+[92mINFO [0m:      	              (42, 0.6633),
+[92mINFO [0m:      	              (43, 0.68),
+[92mINFO [0m:      	              (44, 0.6854),
+[92mINFO [0m:      	              (45, 0.6717),
+[92mINFO [0m:      	              (46, 0.6675),
+[92mINFO [0m:      	              (47, 0.6778),
+[92mINFO [0m:      	              (48, 0.6834),
+[92mINFO [0m:      	              (49, 0.6783),
+[92mINFO [0m:      	              (50, 0.6849)]}
+[92mINFO [0m:      

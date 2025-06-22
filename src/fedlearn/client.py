@@ -23,7 +23,7 @@ class FlowerClient(NumPyClient):
                  lr: float,
                  momentum: float,
                  weight_decay: float,
-                 device: Optional[int]
+                 device: Optional[int] = None
                  ):
         self.partition_id = partition_id
         self.net = net
@@ -37,7 +37,7 @@ class FlowerClient(NumPyClient):
         if device is not None:
             self.device = torch.device(f"cuda:{device}" if torch.cuda.is_available() else "cpu")
         else:
-            self.device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+            self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         self.net.to(self.device)
 
 
@@ -83,7 +83,7 @@ class ScaffoldClient(NumPyClient):
                  momentum: float,
                  weight_decay: float,
                  save_dir: Optional[str],
-                 device: Optional[int]
+                 device: Optional[int] = None
                  ):
         self.partition_id = partition_id
         self.net = net

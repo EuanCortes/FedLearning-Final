@@ -1,0 +1,409 @@
+Job #1 → method=fedavg, supernodes=10, fraction=1, rounds=50, partition=iid
+Running: flwr run --federation-config '
+options.num-supernodes=10 options.backend.init-args.address='local' options.backend.init-args.num-cpus=16 options.backend.init-args.num-gpus=1 options.backend.client-resources.num-cpus=2 options.backend.client-resources.num-gpus=0.1
+' --run-config '
+num-server-rounds=50 fraction-fit=1 method='fedavg' num-partitions=10 partition-method='iid' save-dir='/zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/flower/flower-experiments/client_cvs/1' '
+Loading project configuration... 
+Success
+Server-side evaluation loss 2.30418179445206 / accuracy 0.1001
+[36m(ClientAppActor pid=1669520)[0m [Client 1] fit, config: {}
+[36m(ClientAppActor pid=1669520)[0m [Client 8] fit, config: {}[32m [repeated 8x across cluster] (Ray deduplicates logs by default. Set RAY_DEDUP_LOGS=0 to disable log deduplication, or see https://docs.ray.io/en/master/ray-observability/user-guides/configure-logging.html#log-deduplication for more options.)[0m
+Server-side evaluation loss 2.294785015142647 / accuracy 0.1957
+[36m(ClientAppActor pid=1669517)[0m [Client 2] evaluate, config: {}
+[36m(ClientAppActor pid=1669517)[0m [Client 9] fit, config: {}
+[36m(ClientAppActor pid=1669514)[0m [Client 6] fit, config: {}
+[36m(ClientAppActor pid=1669515)[0m [Client 8] evaluate, config: {}[32m [repeated 4x across cluster][0m
+[36m(ClientAppActor pid=1669517)[0m [Client 9] fit, config: {}[32m [repeated 9x across cluster][0m
+Server-side evaluation loss 2.2527526655014913 / accuracy 0.1837
+[36m(ClientAppActor pid=1669518)[0m [Client 7] evaluate, config: {}
+[36m(ClientAppActor pid=1669516)[0m [Client 1] evaluate, config: {}
+[36m(ClientAppActor pid=1669514)[0m [Client 6] fit, config: {}
+[36m(ClientAppActor pid=1669517)[0m [Client 0] evaluate, config: {}[32m [repeated 3x across cluster][0m
+Server-side evaluation loss 2.0846145251753985 / accuracy 0.2723
+[36m(ClientAppActor pid=1669517)[0m [Client 9] fit, config: {}[32m [repeated 9x across cluster][0m
+[36m(ClientAppActor pid=1669518)[0m [Client 7] evaluate, config: {}
+[36m(ClientAppActor pid=1669516)[0m [Client 3] evaluate, config: {}
+[36m(ClientAppActor pid=1669516)[0m [Client 8] fit, config: {}[32m [repeated 9x across cluster][0m
+[36m(ClientAppActor pid=1669517)[0m [Client 1] evaluate, config: {}[32m [repeated 3x across cluster][0m
+Server-side evaluation loss 1.9494014598761396 / accuracy 0.3124
+[36m(ClientAppActor pid=1669519)[0m [Client 9] fit, config: {}
+[36m(ClientAppActor pid=1669519)[0m [Client 3] evaluate, config: {}
+[36m(ClientAppActor pid=1669518)[0m [Client 5] evaluate, config: {}
+[36m(ClientAppActor pid=1669514)[0m [Client 7] fit, config: {}
+[36m(ClientAppActor pid=1669517)[0m [Client 8] evaluate, config: {}[32m [repeated 3x across cluster][0m
+[36m(ClientAppActor pid=1669520)[0m [Client 9] fit, config: {}[32m [repeated 9x across cluster][0m
+Server-side evaluation loss 1.8290480117129673 / accuracy 0.3502
+[36m(ClientAppActor pid=1669521)[0m [Client 8] evaluate, config: {}
+[36m(ClientAppActor pid=1669518)[0m [Client 5] evaluate, config: {}
+[36m(ClientAppActor pid=1669518)[0m [Client 2] fit, config: {}
+[36m(ClientAppActor pid=1669517)[0m [Client 7] evaluate, config: {}[32m [repeated 3x across cluster][0m
+[36m(ClientAppActor pid=1669520)[0m [Client 9] fit, config: {}[32m [repeated 9x across cluster][0m
+Server-side evaluation loss 1.726557758963032 / accuracy 0.3842
+[36m(ClientAppActor pid=1669521)[0m [Client 6] evaluate, config: {}
+[36m(ClientAppActor pid=1669516)[0m [Client 4] evaluate, config: {}
+[36m(ClientAppActor pid=1669521)[0m [Client 0] fit, config: {}
+[36m(ClientAppActor pid=1669517)[0m [Client 5] evaluate, config: {}[32m [repeated 3x across cluster][0m
+[36m(ClientAppActor pid=1669520)[0m [Client 9] fit, config: {}[32m [repeated 9x across cluster][0m
+Server-side evaluation loss 1.6323663163336979 / accuracy 0.4192
+[36m(ClientAppActor pid=1669518)[0m [Client 4] evaluate, config: {}
+[36m(ClientAppActor pid=1669516)[0m [Client 3] evaluate, config: {}
+[36m(ClientAppActor pid=1669514)[0m [Client 8] fit, config: {}
+[36m(ClientAppActor pid=1669517)[0m [Client 6] evaluate, config: {}[32m [repeated 3x across cluster][0m
+[36m(ClientAppActor pid=1669519)[0m [Client 2] fit, config: {}[32m [repeated 9x across cluster][0m
+Server-side evaluation loss 1.5457234883763988 / accuracy 0.4457
+[36m(ClientAppActor pid=1669519)[0m [Client 0] evaluate, config: {}
+[36m(ClientAppActor pid=1669518)[0m [Client 9] evaluate, config: {}
+[36m(ClientAppActor pid=1669514)[0m [Client 7] fit, config: {}
+[36m(ClientAppActor pid=1669517)[0m [Client 5] evaluate, config: {}[32m [repeated 3x across cluster][0m
+Server-side evaluation loss 1.4968747310577684 / accuracy 0.4582
+[36m(ClientAppActor pid=1669518)[0m [Client 9] fit, config: {}[32m [repeated 9x across cluster][0m
+[36m(ClientAppActor pid=1669519)[0m [Client 9] evaluate, config: {}
+[36m(ClientAppActor pid=1669518)[0m [Client 3] evaluate, config: {}
+[36m(ClientAppActor pid=1669518)[0m [Client 9] fit, config: {}[32m [repeated 9x across cluster][0m
+[36m(ClientAppActor pid=1669515)[0m [Client 8] evaluate, config: {}[32m [repeated 3x across cluster][0m
+Server-side evaluation loss 1.455652015224384 / accuracy 0.469
+[36m(ClientAppActor pid=1669516)[0m [Client 8] fit, config: {}
+[36m(ClientAppActor pid=1669521)[0m [Client 6] evaluate, config: {}
+[36m(ClientAppActor pid=1669518)[0m [Client 0] evaluate, config: {}
+[36m(ClientAppActor pid=1669521)[0m [Client 2] fit, config: {}
+[36m(ClientAppActor pid=1669515)[0m [Client 8] evaluate, config: {}[32m [repeated 3x across cluster][0m
+[36m(ClientAppActor pid=1669519)[0m [Client 9] fit, config: {}[32m [repeated 9x across cluster][0m
+Server-side evaluation loss 1.4131863823362216 / accuracy 0.4867
+[36m(ClientAppActor pid=1669514)[0m [Client 9] evaluate, config: {}
+[36m(ClientAppActor pid=1669519)[0m [Client 1] evaluate, config: {}
+[36m(ClientAppActor pid=1669514)[0m [Client 0] fit, config: {}
+[36m(ClientAppActor pid=1669517)[0m [Client 7] evaluate, config: {}[32m [repeated 3x across cluster][0m
+Server-side evaluation loss 1.3886142111128303 / accuracy 0.4968
+[36m(ClientAppActor pid=1669518)[0m [Client 9] fit, config: {}[32m [repeated 9x across cluster][0m
+[36m(ClientAppActor pid=1669521)[0m [Client 4] evaluate, config: {}
+[36m(ClientAppActor pid=1669518)[0m [Client 0] evaluate, config: {}
+[36m(ClientAppActor pid=1669516)[0m [Client 8] fit, config: {}[32m [repeated 9x across cluster][0m
+[36m(ClientAppActor pid=1669515)[0m [Client 5] evaluate, config: {}[32m [repeated 3x across cluster][0m
+Server-side evaluation loss 1.3572741177431338 / accuracy 0.5089
+[36m(ClientAppActor pid=1669518)[0m [Client 9] fit, config: {}
+[36m(ClientAppActor pid=1669521)[0m [Client 6] evaluate, config: {}
+[36m(ClientAppActor pid=1669518)[0m [Client 2] evaluate, config: {}
+[36m(ClientAppActor pid=1669514)[0m [Client 6] fit, config: {}
+[36m(ClientAppActor pid=1669517)[0m [Client 9] evaluate, config: {}[32m [repeated 3x across cluster][0m
+Server-side evaluation loss 1.3266806480990854 / accuracy 0.5224
+[36m(ClientAppActor pid=1669514)[0m [Client 9] fit, config: {}[32m [repeated 9x across cluster][0m
+[36m(ClientAppActor pid=1669514)[0m [Client 0] evaluate, config: {}
+[36m(ClientAppActor pid=1669521)[0m [Client 4] evaluate, config: {}
+[36m(ClientAppActor pid=1669516)[0m [Client 8] fit, config: {}[32m [repeated 9x across cluster][0m
+[36m(ClientAppActor pid=1669515)[0m [Client 9] evaluate, config: {}[32m [repeated 3x across cluster][0m
+Server-side evaluation loss 1.3028893577065437 / accuracy 0.5269
+[36m(ClientAppActor pid=1669518)[0m [Client 9] fit, config: {}
+[36m(ClientAppActor pid=1669519)[0m [Client 8] evaluate, config: {}
+[36m(ClientAppActor pid=1669521)[0m [Client 4] evaluate, config: {}
+[36m(ClientAppActor pid=1669518)[0m [Client 1] fit, config: {}
+[36m(ClientAppActor pid=1669520)[0m [Client 7] evaluate, config: {}[32m [repeated 3x across cluster][0m
+Server-side evaluation loss 1.2793063696023006 / accuracy 0.5391
+[36m(ClientAppActor pid=1669516)[0m [Client 8] fit, config: {}[32m [repeated 9x across cluster][0m
+[36m(ClientAppActor pid=1669521)[0m [Client 7] evaluate, config: {}
+[36m(ClientAppActor pid=1669518)[0m [Client 0] evaluate, config: {}
+[36m(ClientAppActor pid=1669516)[0m [Client 8] fit, config: {}[32m [repeated 9x across cluster][0m
+[36m(ClientAppActor pid=1669517)[0m [Client 8] evaluate, config: {}[32m [repeated 3x across cluster][0m
+Server-side evaluation loss 1.2569191448248116 / accuracy 0.5482
+[36m(ClientAppActor pid=1669518)[0m [Client 9] fit, config: {}
+[36m(ClientAppActor pid=1669519)[0m [Client 4] evaluate, config: {}
+[36m(ClientAppActor pid=1669521)[0m [Client 2] evaluate, config: {}
+[36m(ClientAppActor pid=1669514)[0m [Client 7] fit, config: {}
+[36m(ClientAppActor pid=1669520)[0m [Client 9] evaluate, config: {}[32m [repeated 3x across cluster][0m
+[36m(ClientAppActor pid=1669518)[0m [Client 9] fit, config: {}[32m [repeated 9x across cluster][0m
+Server-side evaluation loss 1.2321024988866915 / accuracy 0.5574
+[36m(ClientAppActor pid=1669521)[0m [Client 5] evaluate, config: {}
+[36m(ClientAppActor pid=1669518)[0m [Client 0] evaluate, config: {}
+[36m(ClientAppActor pid=1669521)[0m [Client 9] fit, config: {}
+[36m(ClientAppActor pid=1669515)[0m [Client 6] evaluate, config: {}[32m [repeated 3x across cluster][0m
+[36m(ClientAppActor pid=1669516)[0m [Client 5] fit, config: {}[32m [repeated 8x across cluster][0m
+Server-side evaluation loss 1.2169472332213336 / accuracy 0.5624
+[36m(ClientAppActor pid=1669519)[0m [Client 8] evaluate, config: {}
+[36m(ClientAppActor pid=1669520)[0m [Client 6] fit, config: {}
+[36m(ClientAppActor pid=1669521)[0m [Client 6] evaluate, config: {}
+[36m(ClientAppActor pid=1669519)[0m [Client 9] fit, config: {}
+[36m(ClientAppActor pid=1669517)[0m [Client 9] evaluate, config: {}[32m [repeated 3x across cluster][0m
+[36m(ClientAppActor pid=1669519)[0m [Client 8] fit, config: {}[32m [repeated 8x across cluster][0m
+Server-side evaluation loss 1.201877631579235 / accuracy 0.5683
+[36m(ClientAppActor pid=1669519)[0m [Client 0] evaluate, config: {}
+[36m(ClientAppActor pid=1669516)[0m [Client 6] fit, config: {}
+[36m(ClientAppActor pid=1669521)[0m [Client 4] evaluate, config: {}
+[36m(ClientAppActor pid=1669514)[0m [Client 5] fit, config: {}
+[36m(ClientAppActor pid=1669515)[0m [Client 2] evaluate, config: {}[32m [repeated 3x across cluster][0m
+[36m(ClientAppActor pid=1669518)[0m [Client 9] fit, config: {}[32m [repeated 9x across cluster][0m
+Server-side evaluation loss 1.1687864251197524 / accuracy 0.5812
+[36m(ClientAppActor pid=1669519)[0m [Client 7] evaluate, config: {}
+[36m(ClientAppActor pid=1669521)[0m [Client 6] evaluate, config: {}
+[36m(ClientAppActor pid=1669514)[0m [Client 5] fit, config: {}
+[36m(ClientAppActor pid=1669520)[0m [Client 4] evaluate, config: {}[32m [repeated 3x across cluster][0m
+Server-side evaluation loss 1.156761674364661 / accuracy 0.5873
+[36m(ClientAppActor pid=1669518)[0m [Client 9] fit, config: {}[32m [repeated 9x across cluster][0m
+[36m(ClientAppActor pid=1669518)[0m [Client 0] evaluate, config: {}
+[36m(ClientAppActor pid=1669516)[0m [Client 2] evaluate, config: {}
+[36m(ClientAppActor pid=1669514)[0m [Client 9] fit, config: {}[32m [repeated 9x across cluster][0m
+[36m(ClientAppActor pid=1669517)[0m [Client 9] evaluate, config: {}[32m [repeated 3x across cluster][0m
+Server-side evaluation loss 1.1350693679918908 / accuracy 0.5937
+[36m(ClientAppActor pid=1669518)[0m [Client 8] fit, config: {}
+[36m(ClientAppActor pid=1669514)[0m [Client 2] evaluate, config: {}
+[36m(ClientAppActor pid=1669519)[0m [Client 7] evaluate, config: {}
+[36m(ClientAppActor pid=1669514)[0m [Client 1] fit, config: {}
+[36m(ClientAppActor pid=1669515)[0m [Client 6] evaluate, config: {}[32m [repeated 3x across cluster][0m
+Server-side evaluation loss 1.1146144244321592 / accuracy 0.6028
+[36m(ClientAppActor pid=1669518)[0m [Client 9] fit, config: {}[32m [repeated 9x across cluster][0m
+[36m(ClientAppActor pid=1669514)[0m [Client 2] evaluate, config: {}
+[36m(ClientAppActor pid=1669518)[0m [Client 0] evaluate, config: {}
+[36m(ClientAppActor pid=1669514)[0m [Client 8] fit, config: {}[32m [repeated 9x across cluster][0m
+[36m(ClientAppActor pid=1669517)[0m [Client 5] evaluate, config: {}[32m [repeated 3x across cluster][0m
+Server-side evaluation loss 1.0979620009470896 / accuracy 0.6098
+[36m(ClientAppActor pid=1669518)[0m [Client 9] fit, config: {}
+[36m(ClientAppActor pid=1669514)[0m [Client 0] evaluate, config: {}
+[36m(ClientAppActor pid=1669518)[0m [Client 1] evaluate, config: {}
+[36m(ClientAppActor pid=1669514)[0m [Client 3] fit, config: {}
+[36m(ClientAppActor pid=1669515)[0m [Client 4] evaluate, config: {}[32m [repeated 3x across cluster][0m
+[36m(ClientAppActor pid=1669514)[0m [Client 8] fit, config: {}[32m [repeated 8x across cluster][0m
+Server-side evaluation loss 1.0801350489543502 / accuracy 0.6163
+[36m(ClientAppActor pid=1669520)[0m [Client 9] evaluate, config: {}
+[36m(ClientAppActor pid=1669518)[0m [Client 9] fit, config: {}
+[36m(ClientAppActor pid=1669514)[0m [Client 4] evaluate, config: {}
+[36m(ClientAppActor pid=1669514)[0m [Client 0] fit, config: {}
+[36m(ClientAppActor pid=1669517)[0m [Client 7] evaluate, config: {}[32m [repeated 3x across cluster][0m
+[36m(ClientAppActor pid=1669514)[0m [Client 8] fit, config: {}[32m [repeated 8x across cluster][0m
+Server-side evaluation loss 1.066691815853119 / accuracy 0.6235
+[36m(ClientAppActor pid=1669514)[0m [Client 2] evaluate, config: {}
+[36m(ClientAppActor pid=1669518)[0m [Client 9] fit, config: {}
+[36m(ClientAppActor pid=1669521)[0m [Client 4] evaluate, config: {}
+[36m(ClientAppActor pid=1669514)[0m [Client 5] fit, config: {}
+[36m(ClientAppActor pid=1669515)[0m [Client 8] evaluate, config: {}[32m [repeated 3x across cluster][0m
+[36m(ClientAppActor pid=1669521)[0m [Client 9] fit, config: {}[32m [repeated 8x across cluster][0m
+Server-side evaluation loss 1.047584707569924 / accuracy 0.6273
+[36m(ClientAppActor pid=1669519)[0m [Client 9] evaluate, config: {}
+[36m(ClientAppActor pid=1669518)[0m [Client 3] fit, config: {}
+[36m(ClientAppActor pid=1669521)[0m [Client 0] evaluate, config: {}
+[36m(ClientAppActor pid=1669519)[0m [Client 2] fit, config: {}
+[36m(ClientAppActor pid=1669515)[0m [Client 3] evaluate, config: {}[32m [repeated 3x across cluster][0m
+[36m(ClientAppActor pid=1669521)[0m [Client 8] fit, config: {}[32m [repeated 8x across cluster][0m
+Server-side evaluation loss 1.0361396055312673 / accuracy 0.6312
+[36m(ClientAppActor pid=1669521)[0m [Client 1] evaluate, config: {}
+[36m(ClientAppActor pid=1669518)[0m [Client 9] fit, config: {}
+[36m(ClientAppActor pid=1669518)[0m [Client 2] evaluate, config: {}
+[36m(ClientAppActor pid=1669515)[0m [Client 3] fit, config: {}
+[36m(ClientAppActor pid=1669515)[0m [Client 9] evaluate, config: {}[32m [repeated 3x across cluster][0m
+[36m(ClientAppActor pid=1669521)[0m [Client 9] fit, config: {}[32m [repeated 9x across cluster][0m
+Server-side evaluation loss 1.019217879529212 / accuracy 0.637
+[36m(ClientAppActor pid=1669521)[0m [Client 1] evaluate, config: {}
+[36m(ClientAppActor pid=1669518)[0m [Client 2] evaluate, config: {}
+[36m(ClientAppActor pid=1669514)[0m [Client 7] fit, config: {}
+[36m(ClientAppActor pid=1669515)[0m [Client 5] evaluate, config: {}[32m [repeated 3x across cluster][0m
+[36m(ClientAppActor pid=1669521)[0m [Client 8] fit, config: {}[32m [repeated 8x across cluster][0m
+Server-side evaluation loss 1.0136401136969304 / accuracy 0.6394
+[36m(ClientAppActor pid=1669514)[0m [Client 4] evaluate, config: {}
+[36m(ClientAppActor pid=1669518)[0m [Client 9] fit, config: {}
+[36m(ClientAppActor pid=1669519)[0m [Client 9] evaluate, config: {}
+[36m(ClientAppActor pid=1669514)[0m [Client 3] fit, config: {}
+[36m(ClientAppActor pid=1669515)[0m [Client 6] evaluate, config: {}[32m [repeated 3x across cluster][0m
+Server-side evaluation loss 1.0050294410650897 / accuracy 0.6424
+[36m(ClientAppActor pid=1669518)[0m [Client 9] fit, config: {}[32m [repeated 9x across cluster][0m
+[36m(ClientAppActor pid=1669519)[0m [Client 9] evaluate, config: {}
+[36m(ClientAppActor pid=1669521)[0m [Client 3] evaluate, config: {}
+[36m(ClientAppActor pid=1669521)[0m [Client 8] fit, config: {}[32m [repeated 9x across cluster][0m
+[36m(ClientAppActor pid=1669515)[0m [Client 4] evaluate, config: {}[32m [repeated 3x across cluster][0m
+Server-side evaluation loss 0.9880227207378217 / accuracy 0.6472
+[36m(ClientAppActor pid=1669518)[0m [Client 9] fit, config: {}
+[36m(ClientAppActor pid=1669514)[0m [Client 9] evaluate, config: {}
+[36m(ClientAppActor pid=1669521)[0m [Client 4] evaluate, config: {}
+[36m(ClientAppActor pid=1669514)[0m [Client 1] fit, config: {}
+[36m(ClientAppActor pid=1669515)[0m [Client 6] evaluate, config: {}[32m [repeated 3x across cluster][0m
+Server-side evaluation loss 0.972459153005272 / accuracy 0.6538
+[36m(ClientAppActor pid=1669518)[0m [Client 9] fit, config: {}[32m [repeated 9x across cluster][0m
+[36m(ClientAppActor pid=1669514)[0m [Client 7] evaluate, config: {}
+[36m(ClientAppActor pid=1669521)[0m [Client 1] evaluate, config: {}
+[36m(ClientAppActor pid=1669518)[0m [Client 8] fit, config: {}[32m [repeated 9x across cluster][0m
+[36m(ClientAppActor pid=1669515)[0m [Client 5] evaluate, config: {}[32m [repeated 3x across cluster][0m
+Server-side evaluation loss 0.965482141561569 / accuracy 0.6576
+[36m(ClientAppActor pid=1669516)[0m [Client 9] fit, config: {}
+[36m(ClientAppActor pid=1669519)[0m [Client 8] evaluate, config: {}
+[36m(ClientAppActor pid=1669518)[0m [Client 2] evaluate, config: {}
+[36m(ClientAppActor pid=1669514)[0m [Client 7] fit, config: {}
+[36m(ClientAppActor pid=1669515)[0m [Client 4] evaluate, config: {}[32m [repeated 3x across cluster][0m
+Server-side evaluation loss 0.9586267346029829 / accuracy 0.661
+[36m(ClientAppActor pid=1669518)[0m [Client 9] fit, config: {}[32m [repeated 9x across cluster][0m
+[36m(ClientAppActor pid=1669514)[0m [Client 3] evaluate, config: {}
+[36m(ClientAppActor pid=1669518)[0m [Client 1] evaluate, config: {}
+[36m(ClientAppActor pid=1669518)[0m [Client 8] fit, config: {}[32m [repeated 9x across cluster][0m
+[36m(ClientAppActor pid=1669517)[0m [Client 7] evaluate, config: {}[32m [repeated 3x across cluster][0m
+Server-side evaluation loss 0.9535390761247866 / accuracy 0.6614
+[36m(ClientAppActor pid=1669521)[0m [Client 9] fit, config: {}
+[36m(ClientAppActor pid=1669519)[0m [Client 9] evaluate, config: {}
+[36m(ClientAppActor pid=1669521)[0m [Client 0] evaluate, config: {}
+[36m(ClientAppActor pid=1669514)[0m [Client 6] fit, config: {}
+[36m(ClientAppActor pid=1669515)[0m [Client 6] evaluate, config: {}[32m [repeated 3x across cluster][0m
+Server-side evaluation loss 0.9464466655330294 / accuracy 0.6661
+[36m(ClientAppActor pid=1669518)[0m [Client 9] fit, config: {}[32m [repeated 9x across cluster][0m
+[36m(ClientAppActor pid=1669521)[0m [Client 0] evaluate, config: {}
+[36m(ClientAppActor pid=1669518)[0m [Client 2] evaluate, config: {}
+[36m(ClientAppActor pid=1669521)[0m [Client 8] fit, config: {}[32m [repeated 9x across cluster][0m
+[36m(ClientAppActor pid=1669515)[0m [Client 3] evaluate, config: {}[32m [repeated 3x across cluster][0m
+Server-side evaluation loss 0.9417934941638048 / accuracy 0.6641
+[36m(ClientAppActor pid=1669518)[0m [Client 9] fit, config: {}
+[36m(ClientAppActor pid=1669519)[0m [Client 9] evaluate, config: {}
+[36m(ClientAppActor pid=1669521)[0m [Client 3] evaluate, config: {}
+[36m(ClientAppActor pid=1669514)[0m [Client 7] fit, config: {}
+[36m(ClientAppActor pid=1669515)[0m [Client 8] evaluate, config: {}[32m [repeated 3x across cluster][0m
+Server-side evaluation loss 0.9330498530606556 / accuracy 0.6711
+[36m(ClientAppActor pid=1669516)[0m [Client 9] fit, config: {}[32m [repeated 9x across cluster][0m
+[36m(ClientAppActor pid=1669521)[0m [Client 5] evaluate, config: {}
+[36m(ClientAppActor pid=1669518)[0m [Client 1] evaluate, config: {}
+[36m(ClientAppActor pid=1669518)[0m [Client 8] fit, config: {}[32m [repeated 9x across cluster][0m
+[36m(ClientAppActor pid=1669517)[0m [Client 3] evaluate, config: {}[32m [repeated 3x across cluster][0m
+Server-side evaluation loss 0.9238227833608154 / accuracy 0.676
+[36m(ClientAppActor pid=1669517)[0m [Client 9] fit, config: {}
+[36m(ClientAppActor pid=1669514)[0m [Client 3] evaluate, config: {}
+[36m(ClientAppActor pid=1669518)[0m [Client 1] evaluate, config: {}
+[36m(ClientAppActor pid=1669514)[0m [Client 1] fit, config: {}
+[36m(ClientAppActor pid=1669517)[0m [Client 0] evaluate, config: {}[32m [repeated 3x across cluster][0m
+[36m(ClientAppActor pid=1669518)[0m [Client 9] fit, config: {}[32m [repeated 9x across cluster][0m
+Server-side evaluation loss 0.9178284604078645 / accuracy 0.6778
+[36m(ClientAppActor pid=1669514)[0m [Client 9] evaluate, config: {}
+[36m(ClientAppActor pid=1669521)[0m [Client 1] evaluate, config: {}
+[36m(ClientAppActor pid=1669514)[0m [Client 1] fit, config: {}
+[36m(ClientAppActor pid=1669515)[0m [Client 4] evaluate, config: {}[32m [repeated 3x across cluster][0m
+[36m(ClientAppActor pid=1669521)[0m [Client 9] fit, config: {}[32m [repeated 9x across cluster][0m
+Server-side evaluation loss 0.9247031230835399 / accuracy 0.677
+[36m(ClientAppActor pid=1669521)[0m [Client 1] evaluate, config: {}
+[36m(ClientAppActor pid=1669518)[0m [Client 2] evaluate, config: {}
+[36m(ClientAppActor pid=1669514)[0m [Client 8] fit, config: {}
+[36m(ClientAppActor pid=1669517)[0m [Client 3] evaluate, config: {}[32m [repeated 3x across cluster][0m
+Server-side evaluation loss 0.9166093711640425 / accuracy 0.683
+[36m(ClientAppActor pid=1669515)[0m [Client 4] fit, config: {}[32m [repeated 9x across cluster][0m
+[36m(ClientAppActor pid=1669514)[0m [Client 2] evaluate, config: {}
+[36m(ClientAppActor pid=1669519)[0m [Client 5] evaluate, config: {}
+[36m(ClientAppActor pid=1669518)[0m [Client 8] fit, config: {}[32m [repeated 9x across cluster][0m
+[36m(ClientAppActor pid=1669515)[0m [Client 0] evaluate, config: {}[32m [repeated 3x across cluster][0m
+Server-side evaluation loss 0.912377433412394 / accuracy 0.6797
+[36m(ClientAppActor pid=1669516)[0m [Client 9] fit, config: {}
+[36m(ClientAppActor pid=1669514)[0m [Client 9] evaluate, config: {}
+[36m(ClientAppActor pid=1669518)[0m [Client 2] evaluate, config: {}
+[36m(ClientAppActor pid=1669514)[0m [Client 4] fit, config: {}
+[36m(ClientAppActor pid=1669515)[0m [Client 7] evaluate, config: {}[32m [repeated 3x across cluster][0m
+[36m(ClientAppActor pid=1669514)[0m [Client 9] fit, config: {}[32m [repeated 9x across cluster][0m
+Server-side evaluation loss 0.9103867252161548 / accuracy 0.6875
+[36m(ClientAppActor pid=1669514)[0m [Client 8] evaluate, config: {}
+[36m(ClientAppActor pid=1669518)[0m [Client 4] evaluate, config: {}
+[36m(ClientAppActor pid=1669514)[0m [Client 3] fit, config: {}
+[36m(ClientAppActor pid=1669516)[0m [Client 6] evaluate, config: {}[32m [repeated 3x across cluster][0m
+Server-side evaluation loss 0.9078862321604589 / accuracy 0.6876
+[36m(ClientAppActor pid=1669515)[0m [Client 8] fit, config: {}[32m [repeated 9x across cluster][0m
+[36m(ClientAppActor pid=1669521)[0m [Client 6] evaluate, config: {}
+[36m(ClientAppActor pid=1669518)[0m [Client 4] evaluate, config: {}
+[36m(ClientAppActor pid=1669515)[0m [Client 8] fit, config: {}[32m [repeated 9x across cluster][0m
+[36m(ClientAppActor pid=1669517)[0m [Client 8] evaluate, config: {}[32m [repeated 3x across cluster][0m
+Server-side evaluation loss 0.9109498549039197 / accuracy 0.6885
+[36m(ClientAppActor pid=1669514)[0m [Client 9] fit, config: {}
+[36m(ClientAppActor pid=1669515)[0m [Client 5] evaluate, config: {}
+[36m(ClientAppActor pid=1669514)[0m [Client 1] evaluate, config: {}
+[36m(ClientAppActor pid=1669514)[0m [Client 3] fit, config: {}
+[36m(ClientAppActor pid=1669517)[0m [Client 6] evaluate, config: {}[32m [repeated 3x across cluster][0m
+Server-side evaluation loss 0.91477939353627 / accuracy 0.6897
+[36m(ClientAppActor pid=1669515)[0m [Client 8] fit, config: {}[32m [repeated 9x across cluster][0m
+[36m(ClientAppActor pid=1669519)[0m [Client 9] evaluate, config: {}
+[36m(ClientAppActor pid=1669518)[0m [Client 2] evaluate, config: {}
+[36m(ClientAppActor pid=1669518)[0m [Client 8] fit, config: {}[32m [repeated 9x across cluster][0m
+[36m(ClientAppActor pid=1669517)[0m [Client 3] evaluate, config: {}[32m [repeated 3x across cluster][0m
+Server-side evaluation loss 0.9149579295686855 / accuracy 0.691
+[36m(ClientAppActor pid=1669515)[0m [Client 9] fit, config: {}
+[36m(ClientAppActor pid=1669521)[0m [Client 7] evaluate, config: {}
+[36m(ClientAppActor pid=1669518)[0m [Client 2] evaluate, config: {}
+[36m(ClientAppActor pid=1669517)[0m [Client 9] evaluate, config: {}[32m [repeated 3x across cluster][0m
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@hpc.dtu.dk>
+Subject: Job 25306075[1]: <flower_job_array[1-12]> in cluster <dcc> Done
+
+Job <flower_job_array[1-12]> was submitted from host <n-62-20-9> by user <s204790> in cluster <dcc> at Sun Jun 22 15:43:58 2025
+Job was executed on host(s) <16*n-62-18-9>, in queue <gpua100>, as user <s204790> in cluster <dcc> at Sun Jun 22 15:43:59 2025
+</zhome/94/5/156250> was used as the home directory.
+</zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/flower/flower-experiments> was used as the working directory.
+Started at Sun Jun 22 15:43:59 2025
+Terminated at Sun Jun 22 15:55:25 2025
+Results reported at Sun Jun 22 15:55:25 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+
+
+########################### General options ###########################
+
+### –- specify queue --
+#BSUB -q gpua100
+
+### -- set the job Name --
+#BSUB -J flower_job_array[1-12]
+
+### -- ask for number of cores (default: 1) --
+#BSUB -n 16
+
+### -- Select the resources: 1 gpu in exclusive process mode --
+#BSUB -gpu "num=1:mode=shared"
+
+### -- set walltime limit: hh:mm --  maximum 24 hours for GPU-queues right now
+#BSUB -W 01:00
+
+# request system-memory
+#BSUB -R "rusage[mem=32GB]"
+#BSUB -R "span[hosts=1]"
+
+### -- Specify the output and error file. %J is the job-id --
+### -- -o and -e mean append, -oo and -eo mean overwrite --
+#BSUB -o /zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/logs/lsf/%J_%I.out
+#BSUB -e /zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/logs/lsf/%J_%I.err
+# -- end of LSF options --
+
+source /zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/.venv/bin/activate
+
+# job idxs 1-6 are for 10 clients, fraction-fit=1, num-server-rounds=50
+# job idxs 7-12 are for 100 clients, fraction-fit=0.2, num-server-rounds=100
+
+if (( LSB_JOBINDEX < 7 )); then
+    method='fedavg'             # use fedavg method for job indices 1-6
+else
+    method='scaffold'           # use scaffold method for job indices 7-12
+fi
+
+# first 3 jobs per method are run with 10 clients, fraction-fit=1, num-server-rounds=50
+# last 3 jobs per method are run with 100 clients, fraction-fit=0.2, num-server-rounds=100
+
+r=$(( (LSB_JOBINDEX - 1) % 6 ))
+if ((r < 3)); then
+    num_supernodes=10
+    fraction_fit=1
+    num_server_rounds=50
+else
+
+(... more ...)
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   2836.00 sec.
+    Max Memory :                                 7917 MB
+    Average Memory :                             6791.43 MB
+    Total Requested Memory :                     524288.00 MB
+    Delta Memory :                               516371.00 MB
+    Max Swap :                                   -
+    Max Processes :                              20
+    Max Threads :                                859
+    Run time :                                   695 sec.
+    Turnaround time :                            687 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file </zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/logs/lsf/25306075_1.err> for stderr output of this job.
+

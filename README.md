@@ -29,12 +29,17 @@ conda activate FLenv
 ```
 Next, go to the [pytorch website](https://pytorch.org/get-started/locally/), select the appropriate system specifications and select the pip package manager. Copy the given command and go back to the anaconda prompt and run the command. An example is given below:
 ```
-pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 
 ```
 Now we are ready to install the flower framework: we need the simulation package as well as the vision dataset:
 ```
 pip install "flwr[simulation]" "flwr-datasets[vision]"
+```
+
+Finally install the local package from the repo ```fedlearn```:
+```
+pip install -e .
 ```
 
 ## Experiments

@@ -54,8 +54,8 @@ def client_fn(context: Context) -> Client:
     momentum = context.run_config["momentum"]
     weight_decay = context.run_config["weight-decay"]
     method = context.run_config["method"]
-    device = context.run_config["device_id"]
-    
+    save_dir = context.run_config["save-dir"]
+
     if method.lower() == "fedavg":
         return FlowerClient(
             partition_id=partition_id,
@@ -67,7 +67,6 @@ def client_fn(context: Context) -> Client:
             lr=lr,
             momentum=momentum,
             weight_decay=weight_decay,
-            device=device
         ).to_client()
     
     elif method.lower() == "scaffold":
@@ -81,8 +80,7 @@ def client_fn(context: Context) -> Client:
             lr=lr,
             momentum=momentum,
             weight_decay=weight_decay,
-            save_dir="client_cvs",
-            device=device
+            save_dir=save_dir,
         ).to_client()
 
 
