@@ -1,0 +1,256 @@
+[92mINFO [0m:      Starting Flower ServerApp, config: num_rounds=50, no round_timeout
+[92mINFO [0m:      
+[92mINFO [0m:      [INIT]
+[92mINFO [0m:      Using initial parameters provided by strategy
+[92mINFO [0m:      Starting evaluation of initial global parameters
+[92mINFO [0m:      initial parameters (loss, other metrics): 2.302843834943832, {'accuracy': 0.1002}
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 1]
+[93mWARNING [0m:   No fit_metrics_aggregation_fn provided
+[92mINFO [0m:      fit progress: (1, 2.0527503414518513, {'accuracy': 0.2416}, 32.535010382009204)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 2]
+[92mINFO [0m:      fit progress: (2, 1.4477032726737344, {'accuracy': 0.4891}, 53.158257527975366)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 3]
+[92mINFO [0m:      fit progress: (3, 1.1990678496421523, {'accuracy': 0.5713}, 73.64631034701597)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 4]
+[92mINFO [0m:      fit progress: (4, 1.0556345301069272, {'accuracy': 0.6234}, 94.03845300799003)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 5]
+[92mINFO [0m:      fit progress: (5, 0.967046107456183, {'accuracy': 0.6582}, 114.35101926099742)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 6]
+[92mINFO [0m:      fit progress: (6, 0.8908409483873161, {'accuracy': 0.6864}, 134.82979113498004)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 7]
+[92mINFO [0m:      fit progress: (7, 0.8490195688168714, {'accuracy': 0.7045}, 155.30883918696782)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 8]
+[92mINFO [0m:      fit progress: (8, 0.8507160567174292, {'accuracy': 0.7022}, 175.58586022100644)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 9]
+[92mINFO [0m:      fit progress: (9, 0.8316877359037946, {'accuracy': 0.7098}, 195.99640172801446)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 10]
+[92mINFO [0m:      fit progress: (10, 0.8085840353920202, {'accuracy': 0.7193}, 216.31754343799548)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 11]
+[92mINFO [0m:      fit progress: (11, 0.8076469034525999, {'accuracy': 0.7247}, 236.84455125196837)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 12]
+[92mINFO [0m:      fit progress: (12, 0.818324560762211, {'accuracy': 0.7222}, 257.281433000986)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 13]
+[92mINFO [0m:      fit progress: (13, 0.8282870092209736, {'accuracy': 0.727}, 277.8393829599954)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 14]
+[92mINFO [0m:      fit progress: (14, 0.8319830476858054, {'accuracy': 0.7282}, 298.30472069600364)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 15]
+[92mINFO [0m:      fit progress: (15, 0.8445354284374578, {'accuracy': 0.7228}, 318.85434125200845)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 16]
+[92mINFO [0m:      fit progress: (16, 0.8665249575475219, {'accuracy': 0.7255}, 339.43165659101214)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 17]
+[92mINFO [0m:      fit progress: (17, 0.8979740693311024, {'accuracy': 0.7253}, 360.0820402269601)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 18]
+[92mINFO [0m:      fit progress: (18, 0.8946553472500698, {'accuracy': 0.7177}, 380.4350424740114)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 19]
+[92mINFO [0m:      fit progress: (19, 0.9093116618645419, {'accuracy': 0.7229}, 401.0165299520013)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 20]
+[92mINFO [0m:      fit progress: (20, 0.9150912837617716, {'accuracy': 0.7238}, 421.52764213096816)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 21]
+[92mINFO [0m:      fit progress: (21, 0.9738579751199977, {'accuracy': 0.6971}, 442.05394495400833)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 22]
+[92mINFO [0m:      fit progress: (22, 0.9998678196767333, {'accuracy': 0.701}, 462.36781227297615)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 23]
+[92mINFO [0m:      fit progress: (23, 1.0381669783668153, {'accuracy': 0.7172}, 482.8956115049659)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 24]
+[92mINFO [0m:      fit progress: (24, 1.051430329585531, {'accuracy': 0.7173}, 503.31229869800154)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 25]
+[92mINFO [0m:      fit progress: (25, 1.0145273859713488, {'accuracy': 0.7181}, 523.9269895529724)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 26]
+[92mINFO [0m:      fit progress: (26, 1.091204976959593, {'accuracy': 0.7169}, 544.5569643049967)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 27]
+[92mINFO [0m:      fit progress: (27, 1.0602607138597282, {'accuracy': 0.7211}, 565.0949199299794)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 28]
+[92mINFO [0m:      fit progress: (28, 1.0936571553254584, {'accuracy': 0.7111}, 585.5075041549862)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 29]
+[92mINFO [0m:      fit progress: (29, 1.0912805584965237, {'accuracy': 0.6997}, 606.0393850139808)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 30]
+[92mINFO [0m:      fit progress: (30, 1.1000679577611814, {'accuracy': 0.7077}, 626.4433931639651)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 31]
+[92mINFO [0m:      fit progress: (31, 1.153328026366082, {'accuracy': 0.7102}, 646.8598752619582)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 32]
+[92mINFO [0m:      fit progress: (32, 1.189100664512367, {'accuracy': 0.7089}, 667.2630905059632)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 33]
+[92mINFO [0m:      fit progress: (33, 1.1547958241526488, {'accuracy': 0.7011}, 687.7594005099963)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 34]
+[92mINFO [0m:      fit progress: (34, 1.22546918301066, {'accuracy': 0.7073}, 708.0934998999583)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 35]
+[92mINFO [0m:      fit progress: (35, 1.2053702014267065, {'accuracy': 0.7054}, 728.6376817639684)
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 36]
+[91mERROR [0m:     ServerApp thread raised an exception: Loss is NaN, check your model and data.
+[91mERROR [0m:     Traceback (most recent call last):
+  File "/zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/.venv/lib/python3.11/site-packages/flwr/simulation/run_simulation.py", line 268, in server_th_with_start_checks
+    updated_context = _run(
+                      ^^^^^
+  File "/zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/.venv/lib/python3.11/site-packages/flwr/server/run_serverapp.py", line 62, in run
+    server_app(grid=grid, context=context)
+  File "/zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/.venv/lib/python3.11/site-packages/flwr/server/server_app.py", line 166, in __call__
+    start_grid(
+  File "/zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/.venv/lib/python3.11/site-packages/flwr/server/compat/app.py", line 90, in start_grid
+    hist = run_fl(
+           ^^^^^^^
+  File "/zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/.venv/lib/python3.11/site-packages/flwr/server/server.py", line 492, in run_fl
+    hist, elapsed_time = server.fit(
+                         ^^^^^^^^^^^
+  File "/zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/.venv/lib/python3.11/site-packages/flwr/server/server.py", line 128, in fit
+    res_cen = self.strategy.evaluate(current_round, parameters=self.parameters)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/src/fedlearn/strategies.py", line 190, in evaluate
+    eval_res = self.evaluate_fn(server_round, parameters_ndarray, {})
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/flower/flower-experiments/flower_experiments/server_app.py", line 29, in evaluate
+    loss, accuracy = test(
+                     ^^^^^
+  File "/zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/src/fedlearn/model.py", line 184, in test
+    raise ValueError("Loss is NaN, check your model and data.")
+ValueError: Loss is NaN, check your model and data.
+
+Exception in thread Thread-1 (server_th_with_start_checks):
+Traceback (most recent call last):
+  File "/appl9/python/3.11.11/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/appl9/python/3.11.11/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/.venv/lib/python3.11/site-packages/flwr/simulation/run_simulation.py", line 268, in server_th_with_start_checks
+    updated_context = _run(
+                      ^^^^^
+  File "/zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/.venv/lib/python3.11/site-packages/flwr/server/run_serverapp.py", line 62, in run
+    server_app(grid=grid, context=context)
+  File "/zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/.venv/lib/python3.11/site-packages/flwr/server/server_app.py", line 166, in __call__
+    start_grid(
+  File "/zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/.venv/lib/python3.11/site-packages/flwr/server/compat/app.py", line 90, in start_grid
+    hist = run_fl(
+           ^^^^^^^
+  File "/zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/.venv/lib/python3.11/site-packages/flwr/server/server.py", line 492, in run_fl
+    hist, elapsed_time = server.fit(
+                         ^^^^^^^^^^^
+  File "/zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/.venv/lib/python3.11/site-packages/flwr/server/server.py", line 128, in fit
+    res_cen = self.strategy.evaluate(current_round, parameters=self.parameters)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/src/fedlearn/strategies.py", line 190, in evaluate
+    eval_res = self.evaluate_fn(server_round, parameters_ndarray, {})
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/flower/flower-experiments/flower_experiments/server_app.py", line 29, in evaluate
+    loss, accuracy = test(
+                     ^^^^^
+  File "/zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/src/fedlearn/model.py", line 184, in test
+    raise ValueError("Loss is NaN, check your model and data.")
+ValueError: Loss is NaN, check your model and data.
+Traceback (most recent call last):
+  File "/zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/.venv/bin/flower-simulation", line 8, in <module>
+    sys.exit(run_simulation_from_cli())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/.venv/lib/python3.11/site-packages/flwr/simulation/run_simulation.py", line 131, in run_simulation_from_cli
+    _ = _run_simulation(
+        ^^^^^^^^^^^^^^^^
+  File "/zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/.venv/lib/python3.11/site-packages/flwr/simulation/run_simulation.py", line 510, in _run_simulation
+    updated_context = _main_loop(*args)
+                      ^^^^^^^^^^^^^^^^^
+  File "/zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/.venv/lib/python3.11/site-packages/flwr/simulation/run_simulation.py", line 408, in _main_loop
+    raise RuntimeError("Exception in ServerApp thread")
+RuntimeError: Exception in ServerApp thread

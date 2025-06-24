@@ -1,0 +1,202 @@
+Job #10 → method=scaffold, supernodes=100, fraction=0.2, rounds=100, partition=iid
+Running: flwr run --federation-config '
+options.num-supernodes=100 options.backend.init-args.address='local' options.backend.init-args.num-cpus=16 options.backend.init-args.num-gpus=1 options.backend.client-resources.num-cpus=2 options.backend.client-resources.num-gpus=0.1
+' --run-config '
+num-server-rounds=100 fraction-fit=0.2 method='scaffold' num-partitions=100 partition-method='iid' save-dir='/zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/flower/flower-experiments/client_cvs/10' '
+Loading project configuration... 
+Success
+Server-side evaluation loss 2.303519467639316 / accuracy 0.1
+Server-side evaluation loss 2.301580954509176 / accuracy 0.1
+Server-side evaluation loss 2.299152056882336 / accuracy 0.1
+Server-side evaluation loss 2.2971506817325666 / accuracy 0.1009
+Server-side evaluation loss 2.2948987635837237 / accuracy 0.1172
+Server-side evaluation loss 2.2922871128009383 / accuracy 0.1682
+Server-side evaluation loss 2.288768898909259 / accuracy 0.176
+Server-side evaluation loss 2.2844208577635943 / accuracy 0.1806
+Server-side evaluation loss 2.2786996972029376 / accuracy 0.1764
+Server-side evaluation loss 2.270947729706005 / accuracy 0.1723
+Server-side evaluation loss 2.2619131704804243 / accuracy 0.1674
+Server-side evaluation loss 2.248970254970964 / accuracy 0.1765
+Server-side evaluation loss 2.2345856967245696 / accuracy 0.1957
+Server-side evaluation loss 2.216456679022236 / accuracy 0.215
+Server-side evaluation loss 2.1980159571216364 / accuracy 0.2305
+Server-side evaluation loss 2.1745538605246573 / accuracy 0.2449
+Server-side evaluation loss 2.1507020437034075 / accuracy 0.2471
+Server-side evaluation loss 2.123775640111061 / accuracy 0.2569
+Server-side evaluation loss 2.0976068168688733 / accuracy 0.2624
+Server-side evaluation loss 2.073983063363725 / accuracy 0.2629
+Server-side evaluation loss 2.054289097998552 / accuracy 0.2685
+Server-side evaluation loss 2.0331679628153516 / accuracy 0.2722
+Server-side evaluation loss 2.0146569666589142 / accuracy 0.278
+Server-side evaluation loss 1.9988420973917482 / accuracy 0.2814
+Server-side evaluation loss 1.984123495733662 / accuracy 0.2881
+Server-side evaluation loss 1.9702244161800215 / accuracy 0.2943
+Server-side evaluation loss 1.9569899830848547 / accuracy 0.2999
+Server-side evaluation loss 1.9434017725051589 / accuracy 0.3021
+Server-side evaluation loss 1.9323413660571833 / accuracy 0.304
+Server-side evaluation loss 1.9204596410131758 / accuracy 0.3123
+Server-side evaluation loss 1.9089562710683057 / accuracy 0.3148
+Server-side evaluation loss 1.8971705049466177 / accuracy 0.3196
+Server-side evaluation loss 1.8845043706286484 / accuracy 0.3257
+Server-side evaluation loss 1.8723746090178277 / accuracy 0.3282
+Server-side evaluation loss 1.861149052146134 / accuracy 0.3317
+Server-side evaluation loss 1.8491889192799853 / accuracy 0.3387
+Server-side evaluation loss 1.8360779505626412 / accuracy 0.3446
+Server-side evaluation loss 1.823978235007851 / accuracy 0.3514
+Server-side evaluation loss 1.811738831222437 / accuracy 0.3521
+Server-side evaluation loss 1.7993619168639943 / accuracy 0.3561
+Server-side evaluation loss 1.7882394562860964 / accuracy 0.36
+Server-side evaluation loss 1.7783357003691849 / accuracy 0.3611
+Server-side evaluation loss 1.7695688776149872 / accuracy 0.3645
+Server-side evaluation loss 1.7579737939652365 / accuracy 0.3718
+Server-side evaluation loss 1.7465514741885435 / accuracy 0.3721
+Server-side evaluation loss 1.7342602052506368 / accuracy 0.3781
+Server-side evaluation loss 1.7237812417327978 / accuracy 0.384
+Server-side evaluation loss 1.7130200058031992 / accuracy 0.3846
+Server-side evaluation loss 1.703223944469622 / accuracy 0.3912
+Server-side evaluation loss 1.6913922015269092 / accuracy 0.3937
+Server-side evaluation loss 1.6818365579957415 / accuracy 0.3964
+Server-side evaluation loss 1.6702682463226803 / accuracy 0.3989
+Server-side evaluation loss 1.6627738270789953 / accuracy 0.4009
+Server-side evaluation loss 1.6521361390496516 / accuracy 0.4082
+Server-side evaluation loss 1.6435845536031541 / accuracy 0.4115
+Server-side evaluation loss 1.6328990710009434 / accuracy 0.4133
+Server-side evaluation loss 1.6244525233651423 / accuracy 0.4194
+Server-side evaluation loss 1.6112111351292604 / accuracy 0.4239
+Server-side evaluation loss 1.6004583691335788 / accuracy 0.425
+Server-side evaluation loss 1.6022783775997769 / accuracy 0.4233
+Server-side evaluation loss 1.5816701506353488 / accuracy 0.4343
+Server-side evaluation loss 1.5807723459924103 / accuracy 0.4326
+Server-side evaluation loss 1.5668570266407766 / accuracy 0.4399
+Server-side evaluation loss 1.5609397136481704 / accuracy 0.4393
+Server-side evaluation loss 1.5530049983103564 / accuracy 0.4414
+Server-side evaluation loss 1.5408514221762395 / accuracy 0.4453
+Server-side evaluation loss 1.5389459330564852 / accuracy 0.4469
+Server-side evaluation loss 1.531702620208643 / accuracy 0.4497
+Server-side evaluation loss 1.5209580424484934 / accuracy 0.4536
+Server-side evaluation loss 1.5159646971210552 / accuracy 0.4572
+Server-side evaluation loss 1.5075492646284163 / accuracy 0.46
+Server-side evaluation loss 1.502117882108992 / accuracy 0.4618
+Server-side evaluation loss 1.4970676078917875 / accuracy 0.4629
+Server-side evaluation loss 1.490182548571544 / accuracy 0.4617
+Server-side evaluation loss 1.4843797471113265 / accuracy 0.4671
+Server-side evaluation loss 1.4823795640544526 / accuracy 0.4707
+Server-side evaluation loss 1.480308058914865 / accuracy 0.4727
+Server-side evaluation loss 1.467122656524561 / accuracy 0.4768
+Server-side evaluation loss 1.4642732971033472 / accuracy 0.4755
+Server-side evaluation loss 1.4607178975062765 / accuracy 0.4768
+Server-side evaluation loss 1.4535183033366113 / accuracy 0.4786
+Server-side evaluation loss 1.452111292037235 / accuracy 0.4767
+Server-side evaluation loss 1.445628388672118 / accuracy 0.4802
+Server-side evaluation loss 1.4389475751075016 / accuracy 0.482
+Server-side evaluation loss 1.4361211243708423 / accuracy 0.4825
+Server-side evaluation loss 1.430987137138464 / accuracy 0.4881
+Server-side evaluation loss 1.4253326821479069 / accuracy 0.4874
+Server-side evaluation loss 1.4208230296517634 / accuracy 0.4907
+Server-side evaluation loss 1.4170078737720562 / accuracy 0.4895
+Server-side evaluation loss 1.4128974182590557 / accuracy 0.4882
+Server-side evaluation loss 1.4110634562316213 / accuracy 0.4929
+Server-side evaluation loss 1.4060123589388125 / accuracy 0.4922
+Server-side evaluation loss 1.4027120277380487 / accuracy 0.4941
+Server-side evaluation loss 1.3997376777563886 / accuracy 0.4993
+Server-side evaluation loss 1.400204615228495 / accuracy 0.4976
+Server-side evaluation loss 1.3954445222380814 / accuracy 0.4972
+Server-side evaluation loss 1.3921172125324321 / accuracy 0.497
+Server-side evaluation loss 1.3860131669196354 / accuracy 0.5006
+Server-side evaluation loss 1.379116266396395 / accuracy 0.503
+Server-side evaluation loss 1.377534017441379 / accuracy 0.5059
+Server-side evaluation loss 1.3739603522476878 / accuracy 0.5071
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@hpc.dtu.dk>
+Subject: Job 25306075[10]: <flower_job_array[1-12]> in cluster <dcc> Done
+
+Job <flower_job_array[1-12]> was submitted from host <n-62-20-9> by user <s204790> in cluster <dcc> at Sun Jun 22 15:43:58 2025
+Job was executed on host(s) <16*n-62-18-12>, in queue <gpua100>, as user <s204790> in cluster <dcc> at Sun Jun 22 16:29:54 2025
+</zhome/94/5/156250> was used as the home directory.
+</zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/flower/flower-experiments> was used as the working directory.
+Started at Sun Jun 22 16:29:54 2025
+Terminated at Sun Jun 22 16:41:28 2025
+Results reported at Sun Jun 22 16:41:28 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+
+
+########################### General options ###########################
+
+### –- specify queue --
+#BSUB -q gpua100
+
+### -- set the job Name --
+#BSUB -J flower_job_array[1-12]
+
+### -- ask for number of cores (default: 1) --
+#BSUB -n 16
+
+### -- Select the resources: 1 gpu in exclusive process mode --
+#BSUB -gpu "num=1:mode=shared"
+
+### -- set walltime limit: hh:mm --  maximum 24 hours for GPU-queues right now
+#BSUB -W 01:00
+
+# request system-memory
+#BSUB -R "rusage[mem=32GB]"
+#BSUB -R "span[hosts=1]"
+
+### -- Specify the output and error file. %J is the job-id --
+### -- -o and -e mean append, -oo and -eo mean overwrite --
+#BSUB -o /zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/logs/lsf/%J_%I.out
+#BSUB -e /zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/logs/lsf/%J_%I.err
+# -- end of LSF options --
+
+source /zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/.venv/bin/activate
+
+# job idxs 1-6 are for 10 clients, fraction-fit=1, num-server-rounds=50
+# job idxs 7-12 are for 100 clients, fraction-fit=0.2, num-server-rounds=100
+
+if (( LSB_JOBINDEX < 7 )); then
+    method='fedavg'             # use fedavg method for job indices 1-6
+else
+    method='scaffold'           # use scaffold method for job indices 7-12
+fi
+
+# first 3 jobs per method are run with 10 clients, fraction-fit=1, num-server-rounds=50
+# last 3 jobs per method are run with 100 clients, fraction-fit=0.2, num-server-rounds=100
+
+r=$(( (LSB_JOBINDEX - 1) % 6 ))
+if ((r < 3)); then
+    num_supernodes=10
+    fraction_fit=1
+    num_server_rounds=50
+else
+
+(... more ...)
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   3120.00 sec.
+    Max Memory :                                 8495 MB
+    Average Memory :                             7458.43 MB
+    Total Requested Memory :                     524288.00 MB
+    Delta Memory :                               515793.00 MB
+    Max Swap :                                   -
+    Max Processes :                              20
+    Max Threads :                                882
+    Run time :                                   694 sec.
+    Turnaround time :                            3450 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file </zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/logs/lsf/25306075_10.err> for stderr output of this job.
+
