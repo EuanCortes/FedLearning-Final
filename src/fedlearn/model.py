@@ -56,7 +56,8 @@ def train(
     elif optim.lower() == "sgd":
         optimizer = torch.optim.SGD(net.parameters(), lr=lr, momentum=momentum, weight_decay=weight_decay)
     else:
-        raise ValueError(f"Unsupported optimizer: {optim}. Use 'sgd' or 'adam'.")
+        print(f"Unknown optimizer: {optim}. Using SGD by default.")
+        optimizer = torch.optim.SGD(net.parameters(), lr=lr, momentum=momentum, weight_decay=weight_decay)
     
     net.train()
     for epoch in range(num_epochs):

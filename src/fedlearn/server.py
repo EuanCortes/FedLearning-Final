@@ -19,17 +19,27 @@ from flwr.server.server import FitResultsAndFailures, fit_clients
 from fedlearn.utils import concat_params
 
 class ScaffoldServer(Server):
+    """
+    Server implementation for the SCAFFOLD algorithm
+    """
 
-    def __init__(self, 
-                 strategy: Strategy, 
-                 client_manager: ClientManager = SimpleClientManager(),
-                 ) -> None:
+    def __init__(
+            self, 
+            strategy: Strategy, 
+            client_manager: Optional[ClientManager] = None,
+        ) -> None:
+        
+        if client_manager is None:
+            client_manager = SimpleClientManager()
+
         super().__init__(strategy=strategy, client_manager=client_manager)
         
         self.global_cv: List[np.ndarray] = []  # Global control variates for Scaffold
     
     def _get_initial_parameters(
-        self, server_round: int, timeout: Optional[float]
+            self, 
+            server_round: int, 
+            timeout: Optional[float]
         ) -> Parameters: 
         
         parameters = self.strategy.initialize_parameters(self.client_manager)
@@ -51,7 +61,7 @@ class ScaffoldServer(Server):
             self,
             server_round: int,
             timeout: Optional[float],
-            ) -> Optional[Tuple[Optional[Parameters], Dict[str, Scalar], FitResultsAndFailures]]:
+        ) -> Optional[Tuple[Optional[Parameters], Dict[str, Scalar], FitResultsAndFailures]]:
         
         # define client instructions to be passed to "fit_clients" function
         client_instructions = self.strategy.configure_fit(
@@ -70,7 +80,8 @@ class ScaffoldServer(Server):
             f"fit_round {server_round}: selected {len(client_instructions)} clients.",
         )
 
-        # Call the "fit_clients" function to perform the training on selected clients
+        # Call the "fit_clients" function from flwr.server.server
+        # to perform the training on selected clients
         results, failures = fit_clients(
             client_instructions=client_instructions,
             max_workers=self.max_workers,

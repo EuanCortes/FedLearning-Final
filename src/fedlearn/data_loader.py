@@ -17,12 +17,14 @@ def load_datasets(partition_id: int,
                   ) -> Tuple[DataLoader, DataLoader, DataLoader]:
     """
     function for loading CIFAR-10 dataset and partitioning it for federated learning.
+
     Parameters:
-        partition_id:   int, the ID of the partition to load.
-        num_partitions: int, the total number of partitions to create.
-        batch_size:     int, the size of each batch for training and validation.
-        cache_dir:      str, the directory to cache the dataset.
-        partitioner:    Optional[Partitioner], the partitioner to use for creating partitions.
+        partition_id:       int, the ID of the partition to load.
+        partition_method:   str, the method to use for partitioning the dataset.
+        partitioner_kwargs: Dict[str, Union[str, int, float]], the parameters for the partitioner.
+        batch_size:         int, the size of each batch for training and validation.
+        cache_dir:          str, the directory to cache the dataset.
+        
     Returns:
         Tuple[DataLoader, DataLoader, DataLoader]: trainloader, valloader, and testloader.
     """

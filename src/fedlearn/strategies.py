@@ -105,19 +105,26 @@ class ScaffoldStrategy(Strategy):
 
         # The "aggregate()" function expects a list of tuples, where each tuple contains
         # the local parameters and the number of samples for that client.
-        aggregation_inputs_parameters = [
-            (local_params[:len_combined_parameters // 2], num_samples) 
-            for local_params, num_samples in zip(combined_parameters, num_samples_all)
-        ]
+        #aggregation_inputs_parameters = [
+        #    (local_params[:len_combined_parameters // 2], num_samples) 
+        #    for local_params, num_samples in zip(combined_parameters, num_samples_all)
+        #]
         
-        parameters_aggregated = aggregate(aggregation_inputs_parameters)
+        #parameters_aggregated = aggregate(aggregation_inputs_parameters)
 
-        aggregation_inputs_cv = [
-            (local_params[len_combined_parameters // 2:], num_samples) 
+        #aggregation_inputs_cv = [
+        #    (local_params[len_combined_parameters // 2:], num_samples) 
+        #    for local_params, num_samples in zip(combined_parameters, num_samples_all)
+        #]
+
+        #cv_aggregated = aggregate(aggregation_inputs_cv)
+
+        aggregation_inputs = [
+            (local_params, num_samples) 
             for local_params, num_samples in zip(combined_parameters, num_samples_all)
         ]
 
-        cv_aggregated = aggregate(aggregation_inputs_cv)
+        parameters_aggregated = aggregate(aggregation_inputs)
 
         metrics_aggregated = {}
         if self.fit_metrics_aggregation_fn is not None:
@@ -131,7 +138,8 @@ class ScaffoldStrategy(Strategy):
         
 
         return (
-            ndarrays_to_parameters(parameters_aggregated + cv_aggregated),
+            #ndarrays_to_parameters(parameters_aggregated + cv_aggregated),
+            ndarrays_to_parameters(parameters_aggregated),
             metrics_aggregated,
         )
 

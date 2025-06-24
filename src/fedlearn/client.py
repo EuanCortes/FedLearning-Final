@@ -82,7 +82,7 @@ class ScaffoldClient(NumPyClient):
                  lr: float,
                  momentum: float,
                  weight_decay: float,
-                 save_dir: Optional[str],
+                 save_dir: Optional[str] = None,
                  device: Optional[int] = None
                  ):
         self.partition_id = partition_id
