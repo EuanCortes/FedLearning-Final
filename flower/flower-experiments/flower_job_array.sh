@@ -24,11 +24,14 @@
 
 ### -- Specify the output and error file. %J is the job-id --
 ### -- -o and -e mean append, -oo and -eo mean overwrite --
-#BSUB -o /zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/logs/lsf/%J_%I.out
-#BSUB -e /zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/logs/lsf/%J_%I.err
+
+### -------- CHANGE THE PATHS BELOW TO YOUR OWN PATHS --------
+#BSUB -o <PATH/TO/YOUR/LOGS>/%J_%I.out
+#BSUB -e <PATH/TO/YOUR/LOGS>/%J_%I.err
 # -- end of LSF options --
 
-source /zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/.venv/bin/activate
+# change to the path to your virtual environment
+source <PATH/TO/YOUR/VENV>/.venv/bin/activate
 
 # job idxs 1-6 are for 10 clients, fraction-fit=1, num-server-rounds=50
 # job idxs 7-12 are for 100 clients, fraction-fit=0.2, num-server-rounds=100
@@ -80,7 +83,7 @@ fraction-fit=${fraction_fit} \
 method='${method}' \
 num-partitions=${num_supernodes} \
 partition-method='${partition_method}' \
-save-dir='/zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/flower/flower-experiments/client_cvs/${LSB_JOBINDEX}' \
+save-dir='<PATH/TO/YOUR/CLIENT_CVS>/${LSB_JOBINDEX}' \
 "
 
 echo "Running: flwr run --federation-config '$federation_config' --run-config '$run_config'"
@@ -89,5 +92,5 @@ flwr run    \
     --federation-config "$federation_config" \
     --run-config "$run_config"
 
-python3 clean_cvs.py /zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/flower/flower-experiments/client_cvs/${LSB_JOBINDEX}
+python3 clean_cvs.py <PATH/TO/YOUR/CLIENT_CVS>/${LSB_JOBINDEX}
 
