@@ -1,5 +1,5 @@
 """script for extracting and combining history metrics from Flower experiment logs. Mostly written by chatGPT."""
-
+import sys
 import os
 import ast
 import pandas as pd
@@ -22,7 +22,7 @@ def extract_history_dict(log_path: str) -> dict:
             clean = line
             # Start capturing the dict from the first line after the token
             if start_token in clean:
-                print(f"Found start token")
+                print(f"Found start token for metrics history.")
                 capture = True
                 continue
             if capture:
@@ -57,14 +57,15 @@ def extract_run_metadata(log_path: str) -> dict:
     and returns a dict with those parsed values.
     """
     pattern = re.compile(
-        r"Job\s+#(?P<job>\d+)\s+→\s+"
+        r"Job\s+#(?P<job>\d+)\s+(→|->)?\s*"
         r"method=(?P<method>[^,]+),\s*"
         r"supernodes=(?P<supernodes>\d+),\s*"
         r"fraction=(?P<fraction>[^,]+),\s*"
         r"rounds=(?P<rounds>\d+),\s*"
         r"partition=(?P<partition>\w+)"
     )
-    with open(log_path, "r") as f:
+
+    with open(log_path, "r", encoding='utf-8') as f:
         for line in f:
             m = pattern.search(line)
             if m:
@@ -96,10 +97,12 @@ def history_to_dataframe(history: dict, metadata: dict) -> pd.DataFrame:
 
 def main():
 
-    err_files = glob.glob("/zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/logs/lsf/*.err")
-    out_files = glob.glob("/zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/logs/lsf/*.out")
+    log_dir = sys.argv[1]
+    job_id = sys.argv[2]
 
-    job_id = "25306075"     # job ID for the jobs we want to extract logs from
+    err_files = list(Path(log_dir).glob("*.err"))
+    out_files = list(Path(log_dir).glob("*.out"))
+
 
     # filter out unwanted files
     filter_fn = lambda x: job_id in os.path.basename(x)
@@ -125,7 +128,7 @@ def main():
     if dfs:
         # Concatenate all DataFrames and save to a single CSV
         combined_df = pd.concat(dfs, ignore_index=True)
-        output_path = Path(out_files[0]).parent / "combined_history.csv"
+        output_path = Path(out_files[0]).parent / f"{job_id}_combined_history.csv"
         combined_df.to_csv(output_path, index=False)
         print(f"Combined history saved to {output_path}")
     

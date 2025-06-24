@@ -1,14 +1,12 @@
 """flower-experiments: A Flower / PyTorch app."""
-from pathlib import Path
 import torch
 
 from flwr.client import ClientApp, Client
 from flwr.common import Context
-from flwr_datasets.partitioner import IidPartitioner, DirichletPartitioner, ShardPartitioner
 
 from fedlearn.model import SmallCNN
 from fedlearn.data_loader import load_datasets
-from fedlearn.client import ScaffoldClient, FlowerClient
+from fedlearn.client import ScaffoldClient, FlowerClient, FedPerClient
 
 
 def client_fn(context: Context) -> Client:
@@ -37,6 +35,9 @@ def client_fn(context: Context) -> Client:
     # Get cache_dir from run_config, default to "data" in the parent directory
     cache_dir = context.run_config["cache-dir"]
 
+    # data sharing:
+    data_share_fraction = context.run_config["data-sharing-fraction"]
+
     # load client specific dataloaders
     trainloader, valloader, _ = load_datasets(
         partition_id=partition_id, 
@@ -44,6 +45,7 @@ def client_fn(context: Context) -> Client:
         partitioner_kwargs=partitioner_kwargs,
         batch_size=batch_size,
         cache_dir=cache_dir,
+        data_share_fraction=data_share_fraction,
         )
 
     net = SmallCNN()
@@ -54,7 +56,6 @@ def client_fn(context: Context) -> Client:
     momentum = context.run_config["momentum"]
     weight_decay = context.run_config["weight-decay"]
     method = context.run_config["method"]
-    save_dir = context.run_config["save-dir"]
 
     if method.lower() == "fedavg":
         return FlowerClient(
@@ -80,8 +81,21 @@ def client_fn(context: Context) -> Client:
             lr=lr,
             momentum=momentum,
             weight_decay=weight_decay,
-            save_dir=save_dir,
+            context=context,
         ).to_client()
-
+    
+    elif method.lower() == "fedper":
+        return FedPerClient(
+            partition_id=partition_id,
+            net=net,
+            trainloader=trainloader,
+            valloader=valloader,
+            criterion=criterion,
+            num_epochs=num_epochs,
+            lr=lr,
+            momentum=momentum,
+            weight_decay=weight_decay,
+            context=context,
+        ).to_client()
 
 app = ClientApp(client_fn=client_fn)

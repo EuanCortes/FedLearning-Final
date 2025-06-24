@@ -83,7 +83,7 @@ fraction-fit=${fraction_fit} \
 method='${method}' \
 num-partitions=${num_supernodes} \
 partition-method='${partition_method}' \
-save-dir='<PATH/TO/YOUR/CLIENT_CVS>/${LSB_JOBINDEX}' \
+cache-dir=<PATH/TO/YOUR/CACHE_DIR> \
 "
 
 echo "Running: flwr run --federation-config '$federation_config' --run-config '$run_config'"
@@ -91,6 +91,3 @@ echo "Running: flwr run --federation-config '$federation_config' --run-config '$
 flwr run    \
     --federation-config "$federation_config" \
     --run-config "$run_config"
-
-python3 clean_cvs.py <PATH/TO/YOUR/CLIENT_CVS>/${LSB_JOBINDEX}
-

@@ -52,5 +52,3 @@ flwr run    \
     --federation-config "$federation_config" \
     --run-config "$run_config" 
 
-python3 clean_cvs.py /zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/flower/flower-experiments/client_cvs
-

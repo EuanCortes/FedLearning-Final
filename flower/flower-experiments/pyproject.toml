@@ -28,24 +28,24 @@ clientapp = "flower_experiments.client_app:app"
 ## Parameters for the federated learning simulation ##
 
 [tool.flwr.app.config]
-num-server-rounds = 50          # number of rounds of federated learning
+num-server-rounds = 1           # number of rounds of federated learning
+num-partitions = 10             # number of clients (has to be same as num-supernodes in tool.flwr.federations.local-simulation.options!)
 fraction-fit = 1                # fraction of clients to sample each round for training
 fraction-evaluate = 0.5         # fraction of clients to sample each round for evaluation
-num-partitions = 10             # number of clients (has to be same as num-supernodes in tool.flwr.federations.local-simulation.options!)
-local-epochs = 5                # number of local training epochs
+local-epochs = 1                # number of local training epochs
 learning-rate = 0.01            # learning rate for local optimizer
 momentum = 0.0                  # momentum for local optimizer
 weight-decay = 0.0              # weight decay for local optimizer
 batch-size = 32                 # batch size for local training
 
-method = "fedavg"               # aggregation method: either "fedavg" or "scaffold"
+method = "fedavg"               # aggregation method: either "fedavg", "scaffold" or "fedper"
 partition-method = "iid"        # partitioning method: either "iid", "shard" or "dirichlet"
-num-shards-per-partition = 2    # shards per partition, only applicable with "shard" method
+num-shards-per-partition = 2    # shards per partition, only applicable with "shard" method. Value between 1 and 10
 dirichlet-alpha = 0.5           # alpha parameter for dirichlet distribution, only applicable with "dirichlet" method
 
-# directory where data is downloaded to and stored
-cache-dir = "/zhome/94/5/156250/Documents/FederatedLearning/FedLearning-Final/data"
-save-dir = "client_cvs"
+data-sharing-fraction = 0.0     # fraction of data to share between clients, value between 0.0 and 1.0
+
+cache-dir = "data"              # directory where data is downloaded to and stored
 
 
 [tool.flwr.federations]
@@ -53,18 +53,19 @@ default = "local-simulation"
 
 
 [tool.flwr.federations.local-simulation.options]
-num-supernodes = 10
+num-supernodes = 10         # number of supernodes (has to be same as num-partitions in tool.flwr.app.config!)
 
 
 [tool.flwr.federations.local-simulation.options.backend.init-args]
-address = "local"
-num-cpus = 16
-num-gpus = 1
-### -temp-dir = "/tmp/ray"
+address = "local"           # address of the backend, "local" for local simulation
+num-cpus = 8                # number of CPUs to use for the backend
+num-gpus = 1                # number of GPUs to use for the backend
+
+# See https://docs.ray.io/en/latest/ray-core/api/doc/ray.init.html for more init-args #
 
 
 [tool.flwr.federations.local-simulation.options.backend.client-resources]
-num-cpus = 2
-num-gpus = 0.1
+num-cpus = 2        # number of CPUs to allocate per client
+num-gpus = 0.2      # number of GPUs to allocate per client
 
 
